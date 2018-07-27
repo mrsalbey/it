@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef4ded80-38bd-4561-a90e-bc97e1d1fad5">
+  <name>ЗагрузкаДанныхКомпьютеровОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка данных компьютеров и объектов</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.УправлениеУчетнымиЗаписямиСервер.ЗагрузкаДанныхКомпьютеровОбъектов</methodName>
+  <description></description>
+  <key></key>
+  <use>true</use>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

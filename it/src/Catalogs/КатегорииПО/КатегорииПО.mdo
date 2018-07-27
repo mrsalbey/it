@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="809b519b-46ae-4897-8ca2-5a3e714f86ea">
+  <producedTypes>
+    <objectType typeId="53d57d0e-1a52-471a-8b7e-3c93e5e55315" valueTypeId="9efaad23-0c3f-4465-8321-224b6dfb689f"/>
+    <refType typeId="5e990f2c-6b9b-4061-a394-7d4587e06243" valueTypeId="addbb65f-2552-4ab7-89ae-21fb084214f3"/>
+    <selectionType typeId="7cb0ccd3-5d11-4159-b193-24b8ca2ae820" valueTypeId="f363c184-4134-4340-902a-41b630645b21"/>
+    <listType typeId="0beb422b-6db0-4960-8d65-b6bc8e71bdc3" valueTypeId="9c89672c-d494-47e2-bb87-cb65e5b88e4d"/>
+    <managerType typeId="65ea511f-42f2-4461-b611-f256b6645e1e" valueTypeId="4e797200-b202-4880-97af-23be9e0fb281"/>
+  </producedTypes>
+  <name>КатегорииПО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категории ПО</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КатегорииПО.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КатегорииПО.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="eaf684da-5fdd-48a6-a6b4-5371d8b76c73">
+      <name>КлиентскоеОфисное</name>
+      <description>Клиентское офисное</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="c77cd25a-bac4-49be-92ef-54beff993f97">
+      <name>КлиентскоеПрикладное</name>
+      <description>Клиентское прикладное</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="262bd417-0569-415b-be19-60e1ed56f7d6">
+      <name>КлиентскоеСистемное</name>
+      <description>Клиентское системное</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="5036b94b-85c3-47c9-b171-e57cf6e65a99">
+      <name>КлиентскоеСпециализированное</name>
+      <description>Клиентское специализированное</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="62417464-2556-4e1c-94b6-7b84e00f6d07">
+      <name>Прочее</name>
+      <description>Прочее</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="54a90958-ffca-4761-bf04-f143dc5334b4">
+      <name>Серверное</name>
+      <description>Серверное</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

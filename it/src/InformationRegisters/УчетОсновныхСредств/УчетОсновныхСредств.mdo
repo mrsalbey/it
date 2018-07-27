@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eca294c8-e1a1-41bd-9934-436ff47f8da9">
+  <producedTypes>
+    <selectionType typeId="7945e56c-1163-44ab-ba89-e212cb717d01" valueTypeId="8dbaa379-7e95-4754-ac60-e826898c4a11"/>
+    <listType typeId="6030724c-83c5-4f05-852c-e040ac6b5cc2" valueTypeId="4bc4db2f-317b-4f09-9a7e-098a5a5fd2fc"/>
+    <managerType typeId="5af9c08f-914d-4e6b-b51d-d620ac486597" valueTypeId="64ad2a67-8534-4b1c-8d5c-4facb472df00"/>
+    <recordSetType typeId="0dc20628-7039-422f-acd6-9d6fff0ff7c6" valueTypeId="723343ab-d6ed-43cc-b12a-b28f7abc9e38"/>
+    <recordKeyType typeId="079655c9-21a4-4497-b628-672662288883" valueTypeId="2a91822d-d00f-400f-9c5c-843f7178662f"/>
+    <recordType typeId="ac7d3c25-e9ea-42e8-9a03-5e65f8a0e45d" valueTypeId="6241873b-f243-48d5-a2e3-7105fa2ecf51"/>
+    <recordManagerType typeId="6e8393f3-456e-4d75-8503-398f4ebd2361" valueTypeId="511951cc-e8be-47b5-80d1-883df7b84a57"/>
+  </producedTypes>
+  <name>УчетОсновныхСредств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет основных средств</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="045971eb-a0ef-4c1b-83e4-a17a2e7a89da">
+    <name>Учитывать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="581d3fd1-5f43-483c-8aa6-39803f4a6024">
+    <name>ВидОсновногоСредства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид основного средства</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыОсновногоСредства</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

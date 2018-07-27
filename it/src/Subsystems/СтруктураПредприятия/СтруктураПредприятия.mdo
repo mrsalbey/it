@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d362b37-6506-4c37-b03b-7438fb27c204">
+  <name>СтруктураПредприятия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Структура предприятия</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Предприятие</picture>
+  </picture>
+  <content>Catalog.ДолжностиОрганизаций</content>
+  <content>Catalog.Контрагенты</content>
+  <content>Catalog.Организации</content>
+  <content>Catalog.ФизическиеЛица</content>
+  <content>Catalog.УчетныеЗаписиЭлектроннойПочты</content>
+  <content>Catalog.Помещение</content>
+  <content>Catalog.ПодразделенияОрганизаций</content>
+  <content>Catalog.ИдентификаторыДоменов</content>
+</mdclass:Subsystem>

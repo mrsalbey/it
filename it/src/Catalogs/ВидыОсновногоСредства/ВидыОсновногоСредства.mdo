@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0a673363-f9c6-4b1e-9ecb-07ecb93731d0">
+  <producedTypes>
+    <objectType typeId="7fa8631a-e103-4e84-9a35-f84c84e99dab" valueTypeId="cd99dc8f-8370-4719-a01b-90ae29bda0cc"/>
+    <refType typeId="cb5e51cb-49ef-4449-a2e2-bb520463cc4c" valueTypeId="7c154988-90da-46e6-8091-5fbc728b169f"/>
+    <selectionType typeId="2b1f03c4-b6e6-45e2-87a8-b65ca2e76c17" valueTypeId="0af996f8-2413-4013-ba39-f3f5188179e9"/>
+    <listType typeId="175de430-2a80-403a-b147-0e58418e5ec6" valueTypeId="2a931d37-483b-436b-9262-9341246a471c"/>
+    <managerType typeId="46787f70-6655-49e1-8ec5-4ba13502e154" valueTypeId="7acd2d58-1827-44e2-a324-b4c49cd751db"/>
+  </producedTypes>
+  <name>ВидыОсновногоСредства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды основного средства</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыОсновногоСредства.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыОсновногоСредства.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Вид основного средства</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="f581f62d-5c07-4c0f-92a9-1dc7b7904f40">
+      <name>Железо</name>
+      <description>Железо</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="8a757f4d-3a70-4797-8916-ce5a7a28aa96">
+      <name>Лицензия</name>
+      <description>Лицензия</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="4e0d0009-b4df-4b23-961b-4fd9e3b27289">
+      <name>ПерсональныйКомпьютер</name>
+      <description>Персональный компьютер</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="98facd92-df54-449b-a71e-4dfa89ecf12d">
+      <name>ПрограммноеОбеспечение</name>
+      <description>Программное обеспечение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="98537d89-13e9-4078-a830-3f4d97ef93c0">
+      <name>ПродлениеПоддержкиПО</name>
+      <description>Продление поддержки ПО</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="6bb0147f-6b20-4d55-a73d-7fa404b460de">
+    <name>НаборСвойств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Набор свойств</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НаборыДополнительныхРеквизитовИСведений</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0b93af01-86bd-4402-ae6b-b13cd29849b5">
+  <name>Программы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Программы</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Программы</picture>
+  </picture>
+  <subsystems>ПрограммноеОбеспечение</subsystems>
+  <subsystems>АудитПрограммногоОбеспечения</subsystems>
+</mdclass:Subsystem>

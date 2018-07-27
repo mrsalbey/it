@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="188c5cf9-652f-4b0c-8781-53616e3f4290">
+  <producedTypes>
+    <selectionType typeId="fa596f49-931f-46cf-97a3-0907b7173fae" valueTypeId="c06b3e9a-de64-4539-8cb0-d5548b2ac7aa"/>
+    <listType typeId="e59298d7-9b7e-4fed-94b4-83526902f627" valueTypeId="ec62c301-194a-4c31-9a58-b05030de27cf"/>
+    <managerType typeId="492b19d1-a84f-4f6e-b1cf-402b454d9463" valueTypeId="bea0ce5e-c9c3-4a58-a40a-4d130f740d84"/>
+    <recordSetType typeId="5ddbf6ee-4555-491c-af3d-5ac39350085d" valueTypeId="cbba5be0-1840-4920-96a3-b7aa67db4e1a"/>
+    <recordKeyType typeId="217fab72-c379-417d-8ede-66ca53b15105" valueTypeId="10d1cc07-df45-42b9-a508-5a6505544c4c"/>
+    <recordType typeId="5d5ed2ce-34fd-486b-91f6-cee13012724c" valueTypeId="c789408a-2ee6-41f3-8f2f-fb2a2b737141"/>
+  </producedTypes>
+  <name>РазмещениеОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Размещение объектов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d87d6023-a833-42e6-8ba9-0460f04507ab">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="4e3e2586-191f-4b27-adce-a4aaca675bbf">
+    <name>ПризнакУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Признак учета</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ПризнакУчетаПрограмм</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="c38157d6-6ee4-4bd3-8959-2f6b4b1ae264">
+    <name>ИдентификаторДомена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор домена</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ИдентификаторыДоменов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="26fcdf40-5126-4cb3-8857-106c797e307d">
+    <name>ИдентификаторКомпьютера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор компьютера</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="729fde0a-302c-45e5-8595-138f012e14b0">
+    <name>ИдентификаторПрограммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор программы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ИдентификаторыПрограмм</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b19b5aee-3b19-45ce-96bc-9ee671539f21">
+    <name>ОбъектКомпьютера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект компьютера</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОбъектыКомпьютера</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e3bdd55-fb91-40cc-a2f4-c8713316d839">
+  <producedTypes>
+    <objectType typeId="296f2eff-15d8-4e5c-8031-dde60fa49db5" valueTypeId="c6a2ddc1-a291-4c36-aa98-16fd1524088a"/>
+    <managerType typeId="809efdae-58b8-466a-8514-af2f17446ef1" valueTypeId="65e462ac-587e-4991-9502-26fe1174f523"/>
+  </producedTypes>
+  <name>УстановкаЦенПоПрограммам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка цен по программам</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УстановкаЦенПоПрограммам.Form.Форма</defaultForm>
+  <attributes uuid="14b21a3d-8dc7-47e8-ae83-e473757ec356">
+    <name>ДатаУстановки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата установки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="e283e235-c217-4c47-89b4-1c6a193c6fe5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

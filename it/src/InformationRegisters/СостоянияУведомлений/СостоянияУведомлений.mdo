@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a956d2a-5533-480b-980b-622ce7b65765">
+  <producedTypes>
+    <selectionType typeId="d896d37e-f2f7-4f6c-b52e-fa25a39adf01" valueTypeId="52f13437-5cdc-4f43-9b4f-d2bccf3a825f"/>
+    <listType typeId="c2b97c96-614a-4733-a3e8-b9ce708c6b89" valueTypeId="4546c6c3-49b7-48fc-980a-a782b009348c"/>
+    <managerType typeId="0dc85950-7e33-42ca-93c2-48949effd587" valueTypeId="91e1dd1a-1990-4bbf-8e20-7d1ad5a60976"/>
+    <recordSetType typeId="1fda23d1-e02e-40f1-8d54-553166757abe" valueTypeId="0d4cd1cb-6be1-430f-9967-2dc31b69523f"/>
+    <recordKeyType typeId="b1ccbc4c-07b8-4559-b2ce-7b99c5e0e582" valueTypeId="ff75d613-10be-4a4c-8f85-2f75fa538c66"/>
+    <recordType typeId="8e83965f-7971-44b7-9b99-8aa3fa6e6dd4" valueTypeId="2c7f71c3-fa6e-4861-8858-5e20e9641aa7"/>
+    <recordManagerType typeId="8a4b3180-9aca-4f91-88ca-bf66a144898e" valueTypeId="16108247-b167-4402-a819-3dd7c017d4d1"/>
+  </producedTypes>
+  <name>СостоянияУведомлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния уведомлений</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f4ca96d0-6c7c-4986-a9df-304a2cb02b91">
+    <name>ПоследнийЗапуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Последний запуск</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e6266448-6647-44d6-8278-58acd10c4136">
+    <name>Выполнено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнено</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="71c3c009-5a72-4310-8434-cfcc0a9eaea4">
+    <name>СОшибками</name>
+    <synonym>
+      <key>ru</key>
+      <value>С ошибками</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="22d3ad12-1d4e-4f06-9114-2f5ef499af8e">
+    <name>ФизЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="43672d7d-c932-455a-9f00-db7eae1b5cc8">
+    <name>Конфигурация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конфигурация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Конфигурации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ea59d901-3da3-4f8c-b199-217a70aed6b3">
+    <name>Релиз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Релиз</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Релизы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.СостоянияУведомлений.Dimension.Конфигурация</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

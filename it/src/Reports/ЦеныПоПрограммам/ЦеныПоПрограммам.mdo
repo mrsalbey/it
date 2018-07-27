@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f602155f-a5b9-4224-bfc4-b354ac33845c">
+  <producedTypes>
+    <objectType typeId="f795ea6a-8c4e-4960-96a5-af3e9388ca93" valueTypeId="9b68f0cf-1da0-4aaa-95ab-bd82166dea95"/>
+    <managerType typeId="af322fbe-e4ed-4a82-957e-c8417f40af3e" valueTypeId="f1855cc7-c96c-4a73-a3d0-b231cdda391a"/>
+  </producedTypes>
+  <name>ЦеныПоПрограммам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены по программам</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЦеныПоПрограммам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="460dd04d-d1dd-47d7-837f-8ee1a0aede48">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

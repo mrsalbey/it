@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1970e87f-b770-4ddb-b274-aab8f5b29ecf">
+  <name>RSS</name>
+  <synonym>
+    <key>ru</key>
+    <value>RSS</value>
+  </synonym>
+  <comment></comment>
+  <namespace>rss</namespace>
+</mdclass:XDTOPackage>

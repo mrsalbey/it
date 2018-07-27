@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="327233ae-13b5-48dc-97be-6e74194fdf87">
+  <producedTypes>
+    <selectionType typeId="932aaf5f-247c-400f-84fc-70a3e5a80508" valueTypeId="76b72f48-98f3-4f9d-ae30-15db56f14e24"/>
+    <listType typeId="b7f42ff0-3a69-4dd1-ad06-5eb3e549166f" valueTypeId="dcacd78b-c523-4216-bb72-8dd5a8700305"/>
+    <managerType typeId="ee4834c2-f2ff-425b-9c21-b8fddf0cd76b" valueTypeId="0aa3f2ea-3012-41cf-b9a2-212c75478b36"/>
+    <recordSetType typeId="cc96d3bc-7be5-44ec-87dd-3df61fc703e7" valueTypeId="5cc7877c-d507-4656-bc33-de2a1c0e692a"/>
+    <recordKeyType typeId="3719e217-e165-4a96-a8fc-ede350b78bcc" valueTypeId="916705ed-d6b4-44f1-a550-62b4612aef22"/>
+    <recordType typeId="c1941720-9795-42f2-be76-47c84c3ee667" valueTypeId="218b2d53-12f3-48c8-a6e2-f46f4ceaf9aa"/>
+    <recordManagerType typeId="557a672c-065e-4eb2-98c5-a1a669747b96" valueTypeId="d4b90af5-5275-4878-a60b-c1385a99ff91"/>
+  </producedTypes>
+  <name>АналогиЛицензий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Аналоги лицензий</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.АналогиЛицензий.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.АналогиЛицензий.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="0aed44cc-3980-4298-be69-8415b1f1d5e8">
+    <name>Приоритет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приоритет</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7e389f63-5733-4e33-92e3-2550dd5b48c0">
+    <name>ИдентификаторПрограммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор программы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ИдентификаторыПрограмм</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="64dc0121-0edb-4ef5-97f0-0bbcb9be0300">
+    <name>Аналог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналог</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ИдентификаторыПрограмм</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="271c2606-9503-49ca-95f5-27a1de0dd78a">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4ecdbf81-b4ab-4897-b981-4cfd4ff13e8d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

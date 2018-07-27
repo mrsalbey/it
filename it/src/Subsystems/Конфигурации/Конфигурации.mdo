@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="63d1c192-9978-4730-b6c4-22ba2d6e3a31">
+  <name>Конфигурации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Конфигурации</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Конфигурации</picture>
+  </picture>
+  <content>Catalog.Конфигурации</content>
+  <content>Catalog.Релизы</content>
+  <content>Catalog.ТипыКонфигурации</content>
+  <content>Catalog.ВидыКонфигурации</content>
+  <content>InformationRegister.РелизыКонфигураций</content>
+  <content>InformationRegister.КонфигурацииПользователей</content>
+  <content>InformationRegister.СостоянияУведомлений</content>
+</mdclass:Subsystem>

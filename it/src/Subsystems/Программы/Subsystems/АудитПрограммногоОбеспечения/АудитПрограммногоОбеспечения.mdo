@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec042b11-23e6-46a3-8b98-4525c9ba4924">
+  <name>АудитПрограммногоОбеспечения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Аудит программного обеспечения</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Report.ОтчетПоОбъектамВОС</content>
+  <content>Report.ОбщийОтчетПоОсновнымСредствам</content>
+  <content>Catalog.ШаблоныСоответствийОС</content>
+  <content>Catalog.ОбъектыКомпьютера</content>
+  <parentSubsystem>Subsystem.Программы</parentSubsystem>
+</mdclass:Subsystem>

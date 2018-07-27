@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8d714237-8659-47f9-abd5-953de5ac8f05">
+  <producedTypes>
+    <selectionType typeId="d4ae83f3-99d4-4e04-9a25-371e0a726311" valueTypeId="367df9ab-86d8-4a81-8e1b-e2cf2c47ba8d"/>
+    <listType typeId="de1def30-7426-45ae-9c5f-c8b487f48c0f" valueTypeId="d4d86e19-1306-4e1a-a836-c2b9818706e4"/>
+    <managerType typeId="d0c8aa10-093e-4aeb-b5f7-61673e9b243c" valueTypeId="eadf36eb-ec02-4792-add2-e9c5e241fc3d"/>
+    <recordSetType typeId="991c44eb-3ec2-4adb-a6dc-09d0727333ab" valueTypeId="eaef6d02-2ac2-4925-a894-c23b6e6993df"/>
+    <recordKeyType typeId="a08565ab-9206-4fc0-b456-c3310a562597" valueTypeId="617401e4-a388-47c8-b694-3ef2254aac32"/>
+    <recordType typeId="ef0d457d-d3dd-49a4-82c3-ed0b0426fe87" valueTypeId="82a02707-75cb-43a9-a889-d59af09699e3"/>
+    <recordManagerType typeId="956684db-e1c9-4156-8de8-db2b4b199e9f" valueTypeId="584331cd-cfb5-420a-b75c-28e065a7f56c"/>
+  </producedTypes>
+  <name>КомплектующиеОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Комплектующие ОС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9b3d6518-bdaa-4083-af15-8669d85a5b88">
+    <name>ВидДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид движения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидДвиженияНакопления</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cfa6fcb0-2410-4f3b-a234-368e4742cb00">
+    <name>ОсновноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное средство</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cc2fdc59-7bbf-4e98-81f1-94143b286c24">
+    <name>Комплектующая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комплектующая</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

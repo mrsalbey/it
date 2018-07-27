@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0150b3a-5302-406c-b0e9-13cbeeec4ac6">
+  <producedTypes>
+    <objectType typeId="084848f0-421d-4a74-aa2f-10f272fc46ba" valueTypeId="48791cbd-0dfc-4de8-94b2-871e054c3411"/>
+    <refType typeId="2d5ded8a-1b63-4b22-b7da-e3446a4c4d07" valueTypeId="b9ef6301-6d80-41b0-a216-bb41417717c4"/>
+    <selectionType typeId="5cc6b50b-abb7-482f-9faf-e676806cd169" valueTypeId="c13ea76a-2b11-434e-a8f7-ff1e7135f3fd"/>
+    <listType typeId="5e7988b3-5234-47e7-812d-64e5f71133c1" valueTypeId="0b955a20-0b6c-489d-a83b-e497b76042cf"/>
+    <managerType typeId="7ebdde4a-57c9-4f39-a0ab-691b57c7bf07" valueTypeId="96ff0601-319b-4e9a-b72f-c54190131c2a"/>
+  </producedTypes>
+  <name>ОбъектыКомпьютера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты компьютера</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ОбъектыКомпьютера.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ОбъектыКомпьютера.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="87ddab65-0558-4279-95e2-339270eddc43">
+    <name>ШаблонСоответствия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон соответствия</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ШаблоныСоответствийОС</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

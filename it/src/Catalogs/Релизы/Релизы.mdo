@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="193f6914-848a-43d7-aa8c-48c316a2aab2">
+  <producedTypes>
+    <objectType typeId="ff23663b-e48f-4882-b13f-acf3ba5f1d1a" valueTypeId="8cf80458-c77b-463d-897f-d2de1ab9cf63"/>
+    <refType typeId="2cf2d798-9d04-4487-90bb-16278ab1be7b" valueTypeId="c516f4bd-5f01-4b8a-9787-b623f248d17f"/>
+    <selectionType typeId="302fd4b2-338f-4581-93f3-feea5f416202" valueTypeId="eb86203a-87d0-4f2a-9cee-fa4c4747c989"/>
+    <listType typeId="3b1bcac1-534a-4584-ac88-62d00eda4de8" valueTypeId="500de912-241a-4959-9dd6-bf3423ccfba9"/>
+    <managerType typeId="c23c3b90-735c-4882-b32a-6472047be64c" valueTypeId="ab6e146a-7d16-407f-a015-14e5c215f9b2"/>
+  </producedTypes>
+  <name>Релизы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Релизы</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Релизы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Релизы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Конфигурации</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>80</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

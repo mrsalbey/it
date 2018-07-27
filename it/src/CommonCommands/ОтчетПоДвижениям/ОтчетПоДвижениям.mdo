@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee4f4f78-8b7d-4405-8d8f-a0ed3bd41cf5">
+  <name>ОтчетПоДвижениям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по движениям</value>
+  </synonym>
+  <comment></comment>
+  <group>FormNavigationPanelImportant</group>
+  <commandParameterType>
+    <types>DocumentRef.ПланЗакупокЛицензий</types>
+    <types>DocumentRef.ПеремещениеОС</types>
+    <types>DocumentRef.КомплектацияОС</types>
+    <types>DocumentRef.ПоступлениеОС</types>
+    <types>DocumentRef.РаспределениеЛицензий</types>
+    <types>DocumentRef.СписаниеОС</types>
+    <types>DocumentRef.ПокупкаПоддержкиЛицензий</types>
+    <types>DocumentRef.КомплектацияОбъектовОС</types>
+    <types>DocumentRef.ВводНачальныхОстатковОС</types>
+  </commandParameterType>
+  <representation>Picture</representation>
+  <picture xsi:type="core:PictureRef">
+    <picture>StdPicture.DebitCredit</picture>
+  </picture>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

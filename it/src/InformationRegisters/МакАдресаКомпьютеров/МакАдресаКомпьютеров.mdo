@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="25538600-1949-4ab8-bb8b-dc4a74cc8ff9">
+  <producedTypes>
+    <selectionType typeId="89bf9f75-3539-471e-a951-bb2b620a042a" valueTypeId="4d33df61-e4da-4f0a-b45a-54365e6a9bd2"/>
+    <listType typeId="ed110e95-125f-422c-bd11-7648174949d2" valueTypeId="ac128dd8-5c1a-4294-b9bd-10828d606e3c"/>
+    <managerType typeId="524744bf-32e2-40f0-8f5c-edb6bb6719a0" valueTypeId="e8457ab9-5343-4821-aa25-ee2e3c6431a4"/>
+    <recordSetType typeId="e1cc4284-b73a-412a-bb21-b0fe74b1d44f" valueTypeId="351452e0-59b6-4dd5-a5bb-b69058ece34b"/>
+    <recordKeyType typeId="e7c79b54-39cf-44c3-8d28-fe2b7e2eeead" valueTypeId="7be7ce84-9830-427b-ad07-7c001d925c63"/>
+    <recordType typeId="a14cedc2-68b7-40a6-9787-c9306b511843" valueTypeId="edb69cae-2c43-4ac0-b5df-7dd039accfb9"/>
+    <recordManagerType typeId="adca243f-6958-49f8-bc60-34cce5a97b8f" valueTypeId="c136fa05-a918-4cab-8211-36ba58c673ca"/>
+  </producedTypes>
+  <name>МакАдресаКомпьютеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Mac-адреса компьютеров</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="da61402a-4084-47d4-b2e8-d53bfd70c129">
+    <name>МакАдрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Mac-адрес</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="871c10af-fc8c-4d53-b398-4fb35b149f35">
+    <name>System</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор операционной системы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.SystemID</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6ec0f892-d1f0-43c3-8dca-7ae262ae3571">
+    <name>CPUName</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор процессора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.CPUNameID</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0f35f170-7fca-4241-a0fe-3f547dd6b481">
+    <name>Memory</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем памяти</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="949b22b8-46bc-40dc-8f86-dedb7cf450a3">
+    <name>HDD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем жесткого диска</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c386457b-7e22-4456-b7a9-23889c47d1a2">
+    <name>ИдентификаторКомпьютера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор компьютера</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

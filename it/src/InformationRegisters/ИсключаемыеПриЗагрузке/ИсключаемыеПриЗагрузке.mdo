@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00eec6f1-39a5-42a5-beeb-ba464154b42b">
+  <producedTypes>
+    <selectionType typeId="ee6feb44-9d27-4f1d-91d9-85743fa22296" valueTypeId="19bc3ceb-a2c8-43ed-a004-017388efa5b5"/>
+    <listType typeId="cc3148c0-086b-4d41-85b2-2dbb4123eef2" valueTypeId="a8dd1918-86dd-466b-b038-696d25dbd545"/>
+    <managerType typeId="cbae865c-fe41-4809-bc4a-844a5bf2d9a4" valueTypeId="57e5456a-3c17-4075-a100-5e2547360144"/>
+    <recordSetType typeId="32064405-7120-451a-a0ac-573759075fe5" valueTypeId="d15c4e10-10c2-4088-90fe-217d3e299d8e"/>
+    <recordKeyType typeId="91cb35a4-67f0-4b16-85c0-9b9629406c56" valueTypeId="1b9076bd-784d-4be5-8916-b0f56bdffb15"/>
+    <recordType typeId="d29e0f6b-3df5-4b07-9726-91d58361c932" valueTypeId="33bf2747-42bc-4b1b-bbca-57aeb36dfcd2"/>
+    <recordManagerType typeId="f92d2ac7-5507-40fd-8e7b-83fc917d6c2e" valueTypeId="73abc11f-e227-4ea5-b162-a25cc0dac885"/>
+  </producedTypes>
+  <name>ИсключаемыеПриЗагрузке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исключаемые при загрузке</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="60a4b07d-04d5-4a79-b9f4-bd7abefb1340">
+    <name>Исключить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исключить</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4a26e3e3-d17b-4e94-8c8c-aa8b3735a6c3">
+    <name>ИдентификаторКомпьютера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор компьютера</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

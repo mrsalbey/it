@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3b7a101-b40b-445e-9874-f76ff737d1c1">
+  <name>УчетКомпьютеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет компьютеров</value>
+  </synonym>
+  <comment></comment>
+  <location>InformationRegister.УчетОсновныхСредств.Resource.Учитывать</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.ОсновныеСредства.Attribute.ИдентификаторПрограммы</content>
+  <content>Catalog.ОсновныеСредства</content>
+</mdclass:FunctionalOption>

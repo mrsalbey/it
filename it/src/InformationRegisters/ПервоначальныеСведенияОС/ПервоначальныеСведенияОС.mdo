@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a5d036b5-6982-4c9e-b3a8-6a7b4f2abbb5">
+  <producedTypes>
+    <selectionType typeId="ffc151e3-8c88-41f7-9c8a-8cac8b95c877" valueTypeId="7f1495da-079b-4fea-b2c9-2f0824baaca9"/>
+    <listType typeId="9c8d9b10-6840-45af-be17-cde127336762" valueTypeId="fb54d5f1-d5ae-47b6-9221-23639cf3aa0a"/>
+    <managerType typeId="6ca73116-bf1b-44c3-bc63-872c52fd9ecb" valueTypeId="d82393cc-63c9-4a20-902c-71dd4ceaf615"/>
+    <recordSetType typeId="15477942-af48-4539-adb2-c49a7307eed9" valueTypeId="9c8ba70a-732d-44b4-ab34-9ecc2520b46d"/>
+    <recordKeyType typeId="54d5225c-df67-4710-985d-32453ca0ddbf" valueTypeId="a73c05e5-b165-4b36-b07d-757cf805835a"/>
+    <recordType typeId="6391384c-0bb5-48ee-8516-e2ad91dce2a2" valueTypeId="a7fa2a6a-19a7-4d77-b3f6-e2d6bd9c46f1"/>
+    <recordManagerType typeId="3ed2c932-dfb3-452e-b19b-e5fd396fa70c" valueTypeId="0913beee-fcfc-4735-b378-30cf4852a524"/>
+  </producedTypes>
+  <name>ПервоначальныеСведенияОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Первоначальные сведения ОС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="eb3857ee-ab1c-44e6-9d73-c2ef20328de6">
+    <name>Стоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ec19138d-7980-4c50-a242-06af3cff7233">
+    <name>ОсновноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное средство</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

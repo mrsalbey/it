@@ -1,0 +1,108 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="rss">
+	<property name="rss"/>
+	<valueType name="tCloudProtocol" base="xsd:string" variety="Atomic">
+		<enumeration>xml-rpc</enumeration>
+		<enumeration>http-post</enumeration>
+		<enumeration>soap</enumeration>
+	</valueType>
+	<valueType name="tEmailAddress" base="xsd:string" variety="Atomic">
+		<pattern>([a-zA-Z0-9_\-])([a-zA-Z0-9_\-\.]*)@(\[((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}|((([a-zA-Z0-9\-]+)\.)+))([a-zA-Z]{2,}|(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\])</pattern>
+	</valueType>
+	<valueType name="tImageHeight" base="xsd:positiveInteger" variety="Atomic" maxInclusive="400"/>
+	<valueType name="tImageWidth" base="xsd:positiveInteger" variety="Atomic" maxInclusive="144"/>
+	<valueType name="tRfc822FormatDate" base="xsd:string" variety="Atomic">
+		<pattern>(((Mon)|(Tue)|(Wed)|(Thu)|(Fri)|(Sat)|(Sun)), *)?\d\d? +((Jan)|(Feb)|(Mar)|(Apr)|(May)|(Jun)|(Jul)|(Aug)|(Sep)|(Oct)|(Nov)|(Dec)) +\d\d(\d\d)? +\d\d:\d\d(:\d\d)? +(([+\-]?\d\d\d\d)|(UT)|(GMT)|(EST)|(EDT)|(CST)|(CDT)|(MST)|(MDT)|(PST)|(PDT)|\w)</pattern>
+	</valueType>
+	<valueType name="tSkipDay" base="xsd:string" variety="Atomic">
+		<enumeration>Monday</enumeration>
+		<enumeration>Tuesday</enumeration>
+		<enumeration>Wednesday</enumeration>
+		<enumeration>Thursday</enumeration>
+		<enumeration>Friday</enumeration>
+		<enumeration>Saturday</enumeration>
+		<enumeration>Sunday</enumeration>
+	</valueType>
+	<valueType name="tSkipHour" base="xsd:nonNegativeInteger" variety="Atomic" minInclusive="0" maxInclusive="23"/>
+	<objectType name="tCategory">
+		<property name="domain" type="xsd:string" lowerBound="0" form="Attribute"/>
+		<property name="__content" type="xsd:string" form="Text"/>
+	</objectType>
+	<objectType name="tCloud">
+		<property name="domain" type="xsd:string" lowerBound="1" form="Attribute"/>
+		<property name="port" type="xsd:positiveInteger" lowerBound="1" form="Attribute"/>
+		<property name="path" type="xsd:string" lowerBound="1" form="Attribute"/>
+		<property name="registerProcedure" type="xsd:string" lowerBound="1" form="Attribute"/>
+		<property name="protocol" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType name="tEnclosure">
+		<property name="url" type="xsd:anyURI" lowerBound="1" form="Attribute"/>
+		<property name="length" type="xsd:nonNegativeInteger" lowerBound="1" form="Attribute"/>
+		<property name="type" type="xsd:string" lowerBound="1" form="Attribute"/>
+		<property name="__content" type="xsd:string" form="Text"/>
+	</objectType>
+	<objectType name="tGuid">
+		<property name="isPermaLink" type="xsd:boolean" lowerBound="0" fixed="false" default="true" form="Attribute"/>
+		<property name="__content" type="xsd:string" form="Text"/>
+	</objectType>
+	<objectType name="tImage" ordered="false" sequenced="true">
+		<property name="url" type="xsd:anyURI"/>
+		<property name="title" type="xsd:string"/>
+		<property name="link" type="xsd:anyURI"/>
+		<property name="width" type="xsd:anyType" lowerBound="0"/>
+		<property name="height" type="xsd:anyType" lowerBound="0"/>
+		<property name="description" type="xsd:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="tRss" open="true" sequenced="true">
+		<property name="version" type="xsd:decimal" lowerBound="1" fixed="true" default="2.0" form="Attribute"/>
+		<property name="channel" type="xsd:anyType"/>
+	</objectType>
+	<objectType name="tRssChannel" open="true" ordered="false" sequenced="true">
+		<property name="title" type="xsd:string" upperBound="-1"/>
+		<property name="link" type="xsd:anyURI" upperBound="-1"/>
+		<property name="description" type="xsd:string" upperBound="-1"/>
+		<property name="language" type="xsd:language" lowerBound="0" upperBound="-1"/>
+		<property name="copyright" type="xsd:string" lowerBound="0" upperBound="-1"/>
+		<property name="managingEditor" type="xsd:anyType" lowerBound="0" upperBound="-1"/>
+		<property name="webMaster" type="xsd:anyType" lowerBound="0" upperBound="-1"/>
+		<property name="pubDate" type="xsd:anyType" lowerBound="0" upperBound="-1"/>
+		<property name="lastBuildDate" type="xsd:anyType" lowerBound="0" upperBound="-1"/>
+		<property name="category" type="xsd:anyType" lowerBound="0" upperBound="-1"/>
+		<property name="generator" type="xsd:string" lowerBound="0" upperBound="-1"/>
+		<property name="docs" type="xsd:anyURI" lowerBound="0" upperBound="-1"/>
+		<property name="cloud" type="xsd:anyType" lowerBound="0" upperBound="-1"/>
+		<property name="ttl" type="xsd:nonNegativeInteger" lowerBound="0" upperBound="-1"/>
+		<property name="image" type="xsd:anyType" lowerBound="0" upperBound="-1"/>
+		<property name="textInput" type="xsd:anyType" lowerBound="0" upperBound="-1"/>
+		<property name="skipHours" type="xsd:anyType" lowerBound="0" upperBound="-1"/>
+		<property name="skipDays" type="xsd:anyType" lowerBound="0" upperBound="-1"/>
+		<property name="item" type="xsd:anyType" upperBound="-1"/>
+	</objectType>
+	<objectType name="tRssItem" open="true" ordered="false" sequenced="true">
+		<property name="title" type="xsd:string" lowerBound="0" upperBound="-1"/>
+		<property name="description" type="xsd:string" lowerBound="0" upperBound="-1"/>
+		<property name="link" type="xsd:anyURI" lowerBound="0" upperBound="-1"/>
+		<property name="author" type="xsd:anyType" lowerBound="0" upperBound="-1"/>
+		<property name="category" type="xsd:anyType" lowerBound="0" upperBound="-1"/>
+		<property name="comments" type="xsd:anyURI" lowerBound="0" upperBound="-1"/>
+		<property name="enclosure" type="xsd:anyType" lowerBound="0" upperBound="-1"/>
+		<property name="guid" type="xsd:anyType" lowerBound="0" upperBound="-1"/>
+		<property name="pubDate" type="xsd:anyType" lowerBound="0" upperBound="-1"/>
+		<property name="source" type="xsd:anyType" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="tSkipDaysList">
+		<property name="day" type="xsd:anyType" lowerBound="0" upperBound="7"/>
+	</objectType>
+	<objectType name="tSkipHoursList">
+		<property name="hour" type="xsd:anyType" lowerBound="0" upperBound="24"/>
+	</objectType>
+	<objectType name="tSource">
+		<property name="url" type="xsd:anyURI" lowerBound="0" form="Attribute"/>
+		<property name="__content" type="xsd:string" form="Text"/>
+	</objectType>
+	<objectType name="tTextInput" ordered="false" sequenced="true">
+		<property name="title" type="xsd:string"/>
+		<property name="description" type="xsd:string"/>
+		<property name="name" type="xsd:string"/>
+		<property name="link" type="xsd:anyURI"/>
+	</objectType>
+</package>

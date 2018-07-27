@@ -1,0 +1,718 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификаторКомпьютера</dataPath>
+			<field>ИдентификаторКомпьютера</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификаторПрограммы</dataPath>
+			<field>ИдентификаторПрограммы</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификаторУстановлено</dataPath>
+			<field>ИдентификаторУстановлено</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Лицензия</dataPath>
+			<field>Лицензия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектКомпьютера</dataPath>
+			<field>ОбъектКомпьютера</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодразделениеОрганизации</dataPath>
+			<field>ПодразделениеОрганизации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Размещено</dataPath>
+			<field>Размещено</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Свободно</dataPath>
+			<field>Свободно</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Установлено</dataPath>
+			<field>Установлено</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УстановленоСумма</dataPath>
+			<field>УстановленоСумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ='14'; ЧДЦ='2'; ЧРД=','</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Закуплено</dataPath>
+			<field>Закуплено</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗакупленоСумма</dataPath>
+			<field>ЗакупленоСумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ='14'; ЧДЦ='2'; ЧРД=','</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификаторДомена</dataPath>
+			<field>ИдентификаторДомена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БезЛицензии</dataPath>
+			<field>БезЛицензии</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БезЛицензииСумма</dataPath>
+			<field>БезЛицензииСумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	РазмещениеЛицензийОстатки.Организация,
+	РазмещениеЛицензийОстатки.ИдентификаторУстановлено,
+	РазмещениеЛицензийОстатки.ИдентификаторКомпьютера КАК ИдентификаторКомпьютера
+ПОМЕСТИТЬ втРазмещениеОстатки
+ИЗ
+	РегистрНакопления.РазмещениеЛицензий.Остатки КАК РазмещениеЛицензийОстатки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВложенныйЗапрос.Организация КАК Организация,
+	ВложенныйЗапрос.ИдентификаторПрограммы КАК ИдентификаторПрограммы,
+	СУММА(ЕСТЬNULL(ВложенныйЗапрос.Установлено, 0)) КАК Установлено,
+	СУММА(ЕСТЬNULL(ВложенныйЗапрос.УстановленоСумма, 0)) КАК УстановленоСумма,
+	ЕСТЬNULL(ВложенныйЗапрос.БезЛицензии, 0) КАК БезЛицензии,
+	ЕСТЬNULL(ВложенныйЗапрос.БезЛицензииСумма, 0) КАК БезЛицензииСумма,
+	СУММА(ЕСТЬNULL(ВложенныйЗапрос.Закуплено, 0)) КАК Закуплено,
+	СУММА(ЕСТЬNULL(ВложенныйЗапрос.ЗакупленоСумма, 0)) КАК ЗакупленоСумма,
+	СУММА(ЕСТЬNULL(ВложенныйЗапрос.Размещено, 0)) КАК Размещено,
+	СУММА(ЕСТЬNULL(ВложенныйЗапрос.Свободно, 0)) КАК Свободно
+ИЗ
+	(ВЫБРАТЬ
+		ВложенныйЗапрос.Организация КАК Организация,
+		ВложенныйЗапрос.ИдентификаторПрограммы КАК ИдентификаторПрограммы,
+		ВложенныйЗапрос.Установлено КАК Установлено,
+		ВложенныйЗапрос.УстановленоСумма КАК УстановленоСумма,
+		NULL КАК БезЛицензии,
+		NULL КАК БезЛицензииСумма,
+		NULL КАК Закуплено,
+		NULL КАК ЗакупленоСумма,
+		NULL КАК Размещено,
+		NULL КАК Свободно
+	ИЗ
+		(ВЫБРАТЬ
+			ВложенныйЗапрос.Организация КАК Организация,
+			ВложенныйЗапрос.ИдентификаторПрограммы КАК ИдентификаторПрограммы,
+			ВложенныйЗапрос.Установлено КАК Установлено,
+			ВложенныйЗапрос.Установлено * ЕСТЬNULL(ЦеныПрограммСрезПоследних.Цена, 0) КАК УстановленоСумма
+		ИЗ
+			(ВЫБРАТЬ
+				ВложенныйЗапрос.ИдентификаторПрограммы КАК ИдентификаторПрограммы,
+				СУММА(ВложенныйЗапрос.Установлено) КАК Установлено,
+				ВложенныйЗапрос.Организация КАК Организация
+			ИЗ
+				(ВЫБРАТЬ
+					ВложенныйЗапрос.ИдентификаторКомпьютера КАК ИдентификаторКомпьютера,
+					ВложенныйЗапрос.ИдентификаторПрограммы КАК ИдентификаторПрограммы,
+					ВложенныйЗапрос.Установлено КАК Установлено,
+					ЕСТЬNULL(МестонахождениеОССрезПоследних.Организация, ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)) КАК Организация
+				ИЗ
+					(ВЫБРАТЬ
+						РазмещениеОбъектовОстатки.ИдентификаторКомпьютера КАК ИдентификаторКомпьютера,
+						РазмещениеОбъектовОстатки.ИдентификаторПрограммы КАК ИдентификаторПрограммы,
+						КОЛИЧЕСТВО(РАЗЛИЧНЫЕ РазмещениеОбъектовОстатки.ИдентификаторПрограммы) КАК Установлено
+					ИЗ
+						РегистрНакопления.РазмещениеОбъектов.Остатки(, ИдентификаторПрограммы.ПризнакУчета = ЗНАЧЕНИЕ(Перечисление.ПризнакУчетаПрограмм.Учитывать)) КАК РазмещениеОбъектовОстатки
+					
+					СГРУППИРОВАТЬ ПО
+						РазмещениеОбъектовОстатки.ИдентификаторКомпьютера,
+						РазмещениеОбъектовОстатки.ИдентификаторПрограммы) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.МестонахождениеОС.СрезПоследних КАК МестонахождениеОССрезПоследних
+						ПО ВложенныйЗапрос.ИдентификаторКомпьютера = МестонахождениеОССрезПоследних.ОсновноеСредство
+				
+				СГРУППИРОВАТЬ ПО
+					ВложенныйЗапрос.ИдентификаторКомпьютера,
+					ВложенныйЗапрос.ИдентификаторПрограммы,
+					ВложенныйЗапрос.Установлено,
+					ЕСТЬNULL(МестонахождениеОССрезПоследних.Организация, ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка))) КАК ВложенныйЗапрос
+			
+			СГРУППИРОВАТЬ ПО
+				ВложенныйЗапрос.Организация,
+				ВложенныйЗапрос.ИдентификаторПрограммы) КАК ВложенныйЗапрос
+				ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныПрограмм.СрезПоследних КАК ЦеныПрограммСрезПоследних
+				ПО ВложенныйЗапрос.ИдентификаторПрограммы = ЦеныПрограммСрезПоследних.Программа
+		
+		ОБЪЕДИНИТЬ ВСЕ
+		
+		ВЫБРАТЬ
+			КомпьютерыОрганизации.Организация,
+			КомпьютерыОрганизации.ИдентификаторПрограммы,
+			КомпьютерыОрганизации.Установлено,
+			КомпьютерыОрганизации.Установлено * ЕСТЬNULL(ЦеныПрограммСрезПоследних.Цена, 0)
+		ИЗ
+			(ВЫБРАТЬ
+				ВложенныйЗапрос.Организация КАК Организация,
+				ВложенныйЗапрос.ИдентификаторПрограммы КАК ИдентификаторПрограммы,
+				ВложенныйЗапрос.Установлено КАК Установлено
+			ИЗ
+				(ВЫБРАТЬ
+					КомпьютерыОрганизации.Организация КАК Организация,
+					ОбязательныйСофтОрганизаций.ИдентификаторПрограммы КАК ИдентификаторПрограммы,
+					КОЛИЧЕСТВО(РАЗЛИЧНЫЕ КомпьютерыОрганизации.ОсновноеСредство) КАК Установлено
+				ИЗ
+					РегистрСведений.ОбязательныйСофтОрганизаций КАК ОбязательныйСофтОрганизаций
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.МестонахождениеОС.СрезПоследних(, ) КАК КомпьютерыОрганизации
+						ПО ОбязательныйСофтОрганизаций.Организация = КомпьютерыОрганизации.Организация
+				
+				СГРУППИРОВАТЬ ПО
+					КомпьютерыОрганизации.Организация,
+					ОбязательныйСофтОрганизаций.ИдентификаторПрограммы) КАК ВложенныйЗапрос) КАК КомпьютерыОрганизации
+				ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныПрограмм.СрезПоследних КАК ЦеныПрограммСрезПоследних
+				ПО КомпьютерыОрганизации.ИдентификаторПрограммы = ЦеныПрограммСрезПоследних.Программа) КАК ВложенныйЗапрос
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		ВложенныйЗапрос.Организация,
+		ВложенныйЗапрос.ИдентификаторПрограммы,
+		NULL,
+		NULL,
+		NULL,
+		NULL,
+		ВложенныйЗапрос.КоличествоОборот,
+		ВложенныйЗапрос.СтоимостьОборот,
+		NULL,
+		NULL
+	ИЗ
+		(ВЫБРАТЬ
+			ЗакупкиОбороты.Организация КАК Организация,
+			ЗакупкиОбороты.ИдентификаторПрограммы КАК ИдентификаторПрограммы,
+			ЗакупкиОбороты.КоличествоОборот КАК КоличествоОборот,
+			ЗакупкиОбороты.СтоимостьОборот КАК СтоимостьОборот,
+			ВЫБОР
+				КОГДА ЗакупкиОбороты.КоличествоОборот ЕСТЬ NULL 
+					ТОГДА 0
+				ИНАЧЕ ЗакупкиОбороты.СтоимостьОборот / ЗакупкиОбороты.КоличествоОборот
+			КОНЕЦ КАК Цена
+		ИЗ
+			РегистрНакопления.Закупки.Обороты(, , , ИдентификаторПрограммы.ПризнакУчета = ЗНАЧЕНИЕ(Перечисление.ПризнакУчетаПрограмм.Учитывать)) КАК ЗакупкиОбороты) КАК ВложенныйЗапрос
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		РазмещениеЛицензийОстатки.Организация,
+		РазмещениеЛицензийОстатки.ИдентификаторУстановлено,
+		NULL,
+		NULL,
+		NULL,
+		NULL,
+		NULL,
+		NULL,
+		РазмещениеЛицензийОстатки.КоличествоОстаток,
+		NULL
+	ИЗ
+		РегистрНакопления.РазмещениеЛицензий.Остатки(, ИдентификаторПрограммы.ПризнакУчета = ЗНАЧЕНИЕ(Перечисление.ПризнакУчетаПрограмм.Учитывать)) КАК РазмещениеЛицензийОстатки
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		ЛицензииОрганизацииОстатки.Организация,
+		ЛицензииОрганизацииОстатки.ИдентификаторПрограммы,
+		NULL,
+		NULL,
+		NULL,
+		NULL,
+		NULL,
+		NULL,
+		NULL,
+		ЛицензииОрганизацииОстатки.КоличествоОстаток
+	ИЗ
+		РегистрНакопления.ЛицензииОрганизации.Остатки(, ИдентификаторПрограммы.ПризнакУчета = ЗНАЧЕНИЕ(Перечисление.ПризнакУчетаПрограмм.Учитывать)) КАК ЛицензииОрганизацииОстатки
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		ВложенныйЗапрос.Организация,
+		ВложенныйЗапрос.ИдентификаторУстановлено,
+		NULL,
+		NULL,
+		ВложенныйЗапрос.БезЛицензии,
+		ВложенныйЗапрос.БезЛицензии * ЕСТЬNULL(ЦеныПрограммСрезПоследних.Цена, 0),
+		NULL,
+		NULL,
+		NULL,
+		NULL
+	ИЗ
+		(ВЫБРАТЬ
+			НелицензионныйСофт.Организация КАК Организация,
+			НелицензионныйСофт.ИдентификаторУстановлено КАК ИдентификаторУстановлено,
+			НелицензионныйСофт.БезЛицензии КАК БезЛицензии
+		ИЗ
+			(ВЫБРАТЬ
+				ЕСТЬNULL(МестонахождениеОССрезПоследних.Организация, ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)) КАК Организация,
+				РазмещениеОбъектов.ИдентификаторПрограммы КАК ИдентификаторУстановлено,
+				СУММА(РазмещениеОбъектов.КоличествоУстановлено) КАК БезЛицензии
+			ИЗ
+				(ВЫБРАТЬ
+					РазмещениеОбъектовОстатки.ИдентификаторКомпьютера КАК ИдентификаторКомпьютера,
+					РазмещениеОбъектовОстатки.ИдентификаторПрограммы КАК ИдентификаторПрограммы,
+					КОЛИЧЕСТВО(РАЗЛИЧНЫЕ РазмещениеОбъектовОстатки.ИдентификаторПрограммы) КАК КоличествоУстановлено
+				ИЗ
+					РегистрНакопления.РазмещениеОбъектов.Остатки(, ИдентификаторПрограммы.ПризнакУчета = ЗНАЧЕНИЕ(Перечисление.ПризнакУчетаПрограмм.Учитывать)) КАК РазмещениеОбъектовОстатки
+				
+				СГРУППИРОВАТЬ ПО
+					РазмещениеОбъектовОстатки.ИдентификаторКомпьютера,
+					РазмещениеОбъектовОстатки.ИдентификаторПрограммы) КАК РазмещениеОбъектов
+					ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.РазмещениеЛицензий.Остатки(, ИдентификаторПрограммы.ПризнакУчета = ЗНАЧЕНИЕ(Перечисление.ПризнакУчетаПрограмм.Учитывать)) КАК РазмещениеЛицензийОстатки
+					ПО РазмещениеОбъектов.ИдентификаторКомпьютера = РазмещениеЛицензийОстатки.ИдентификаторКомпьютера
+						И РазмещениеОбъектов.ИдентификаторПрограммы = РазмещениеЛицензийОстатки.ИдентификаторУстановлено
+					ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.МестонахождениеОС.СрезПоследних КАК МестонахождениеОССрезПоследних
+					ПО РазмещениеОбъектов.ИдентификаторКомпьютера = МестонахождениеОССрезПоследних.ОсновноеСредство
+			ГДЕ
+				РазмещениеЛицензийОстатки.КоличествоОстаток ЕСТЬ NULL 
+			
+			СГРУППИРОВАТЬ ПО
+				ЕСТЬNULL(МестонахождениеОССрезПоследних.Организация, ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)),
+				РазмещениеОбъектов.ИдентификаторПрограммы) КАК НелицензионныйСофт
+		
+		ОБЪЕДИНИТЬ ВСЕ
+		
+		ВЫБРАТЬ
+			ВложенныйЗапрос.Организация,
+			ВложенныйЗапрос.Идентификатор,
+			КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ВложенныйЗапрос.ИдентификаторКомпьютера)
+		ИЗ
+			(ВЫБРАТЬ
+				КомпьютерыОрганизации.Организация КАК Организация,
+				КомпьютерыОрганизации.ОсновноеСредство КАК ИдентификаторКомпьютера,
+				ОбязательныйСофтОрганизаций.ИдентификаторПрограммы КАК Идентификатор,
+				КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ОбязательныйСофтОрганизаций.ИдентификаторПрограммы) КАК Количество
+			ИЗ
+				РегистрСведений.ОбязательныйСофтОрганизаций КАК ОбязательныйСофтОрганизаций
+					ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.МестонахождениеОС.СрезПоследних(, ) КАК КомпьютерыОрганизации
+					ПО ОбязательныйСофтОрганизаций.Организация = КомпьютерыОрганизации.Организация
+			
+			СГРУППИРОВАТЬ ПО
+				КомпьютерыОрганизации.Организация,
+				КомпьютерыОрганизации.ОсновноеСредство,
+				ОбязательныйСофтОрганизаций.ИдентификаторПрограммы) КАК ВложенныйЗапрос
+				ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ОтключенныеКомпьютеры.СрезПоследних(, ) КАК ОтключенныеКомпьютерыСрезПоследних
+				ПО ВложенныйЗапрос.ИдентификаторКомпьютера = ОтключенныеКомпьютерыСрезПоследних.ИдентификаторКомпьютера
+		ГДЕ
+			НЕ ЕСТЬNULL(ОтключенныеКомпьютерыСрезПоследних.Отключен, ЛОЖЬ)
+			И НЕ (ВложенныйЗапрос.Организация, ВложенныйЗапрос.Идентификатор, ВложенныйЗапрос.ИдентификаторКомпьютера) В
+						(ВЫБРАТЬ РАЗЛИЧНЫЕ
+							втРазмещениеОстатки.Организация,
+							втРазмещениеОстатки.ИдентификаторУстановлено,
+							втРазмещениеОстатки.ИдентификаторКомпьютера
+						ИЗ
+							втРазмещениеОстатки КАК втРазмещениеОстатки)
+		
+		СГРУППИРОВАТЬ ПО
+			ВложенныйЗапрос.Организация,
+			ВложенныйЗапрос.Идентификатор) КАК ВложенныйЗапрос
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныПрограмм.СрезПоследних КАК ЦеныПрограммСрезПоследних
+			ПО ВложенныйЗапрос.ИдентификаторУстановлено = ЦеныПрограммСрезПоследних.Программа) КАК ВложенныйЗапрос
+
+СГРУППИРОВАТЬ ПО
+	ВложенныйЗапрос.Организация,
+	ВложенныйЗапрос.ИдентификаторПрограммы,
+	ЕСТЬNULL(ВложенныйЗапрос.БезЛицензии, 0),
+	ЕСТЬNULL(ВложенныйЗапрос.БезЛицензииСумма, 0)</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>РазмещеноСумма</dataPath>
+		<expression>  ВЫБОР 
+	КОГДА Закуплено=0 ТОГДА 0
+	ИНАЧЕ (ЗакупленоСумма/Закуплено)*Размещено
+КОНЕЦ	
+</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Стоимость</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ='14'; ЧДЦ='2'; ЧРД=','</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СвободноСумма</dataPath>
+		<expression>  ВЫБОР 
+	КОГДА Закуплено=0 ТОГДА 0
+	ИНАЧЕ (ЗакупленоСумма/Закуплено)*Свободно
+КОНЕЦ	
+</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Стоимость</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ='14'; ЧДЦ='2'; ЧРД=','</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<totalField>
+		<dataPath>Установлено</dataPath>
+		<expression>Сумма(Установлено)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Размещено</dataPath>
+		<expression>Сумма(Размещено)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Свободно</dataPath>
+		<expression>Сумма(Свободно)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>УстановленоСумма</dataPath>
+		<expression>Сумма(УстановленоСумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>РазмещеноСумма</dataPath>
+		<expression>Сумма(РазмещеноСумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СвободноСумма</dataPath>
+		<expression>Сумма(СвободноСумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Закуплено</dataPath>
+		<expression>Сумма(Закуплено)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЗакупленоСумма</dataPath>
+		<expression>Сумма(ЗакупленоСумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>БезЛицензии</dataPath>
+		<expression>Сумма(БезЛицензии)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>БезЛицензииСумма</dataPath>
+		<expression>Сумма(БезЛицензииСумма)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Программ установлено</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Установлено</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>УстановленоСумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:title>Программы без лицензий</dcsset:title>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>БезЛицензии</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>БезЛицензииСумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лицензий закуплено</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Закуплено</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЗакупленоСумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лицензий размещено</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Размещено</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>РазмещеноСумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лицензий свободно</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Свободно</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СвободноСумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.Организации.ПустаяСсылка</dcsset:right>
+					<dcsset:userSettingID>2236ce4c-bbf6-4e01-b9a5-37318c927ec4</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ИдентификаторПрограммы</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ИдентификаторыПрограмм.ПустаяСсылка</dcsset:right>
+					<dcsset:userSettingID>ca331851-5028-4797-9c4d-8ed156ad7560</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>65b189a3-17df-4315-8013-0ab7741cb160</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Организация.Наименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ИдентификаторПрограммы.Наименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>cf121429-c0e0-48c3-9ace-6cf64cadfec1</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Организация</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сводный анализ лицензий организаций</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ИдентификаторПрограммы</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			<dcsset:itemsUserSettingID>0d3fb8ab-f534-479c-9f9e-c97f52dc0103</dcsset:itemsUserSettingID>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

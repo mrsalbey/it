@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e1636e39-71df-4084-aabc-a805d442ca76">
+  <producedTypes>
+    <objectType typeId="37a741a3-c057-46f3-b4a5-57d7707c6748" valueTypeId="dc4422e1-fcdd-4d38-896d-5089a9097ab9"/>
+    <managerType typeId="71edb2d6-5dab-459b-9c86-45a62e6c959d" valueTypeId="9ab679ed-9eaf-454d-95e1-40d37c9825fe"/>
+  </producedTypes>
+  <name>АнализЖивогоИМертвогоСофта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ живого и мертвого софта</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.АнализЖивогоИМертвогоСофта.Form.Форма</defaultForm>
+  <attributes uuid="d7ccbe9b-6530-4ce7-aed4-2fd94e2cab0b">
+    <name>ВариантОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант отчета</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВариантыАнализаЖивогоИМертвогоСофта</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="f6cbcb25-b240-4671-9681-be8726108f53">
+    <producedTypes>
+      <objectType typeId="ab33e78e-4735-4739-933f-5b53727e3d84" valueTypeId="ba89af9c-e725-4120-b91c-0827be41e99a"/>
+      <rowType typeId="9db91e06-915e-4c81-9369-2b3acb2b9781" valueTypeId="ba07ddbe-3001-4144-a294-edebdeab6518"/>
+    </producedTypes>
+    <name>ОсновныеСредства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основные средства</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="d80a61a5-bc0b-4791-8274-a0dca5bafc66">
+      <name>Флаг</name>
+      <synonym>
+        <key>ru</key>
+        <value>Флаг</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="61cd9596-8ac1-4728-81cd-096780cf1ae0">
+      <name>ИдентификаторКомпьютера</name>
+      <synonym>
+        <key>ru</key>
+        <value>Идентификатор компьютера</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ОсновныеСредства</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f2b7c26d-7881-456b-945e-f8997ea07e21">
+      <name>ИдентификаторУстановлено</name>
+      <synonym>
+        <key>ru</key>
+        <value>Идентификатор установлено</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ИдентификаторыПрограмм</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b28b4f36-aeb3-4c8c-8321-f48eb36f224b">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8588e9da-522c-4572-ab6d-de201a8897ec">
+      <name>КоличествоУстановлено</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество установлено</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="18673409-f7de-40c2-844a-52507d7a7f49">
+      <name>Организация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Организация</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Организации</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="3b4efc21-1912-470b-bd73-c8b0f497d398">
+      <name>ПодразделениеОрганизации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение организации</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ПодразделенияОрганизаций</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <linkByType>
+        <field>DataProcessor.АнализЖивогоИМертвогоСофта.TabularSection.ОсновныеСредства.Attribute.Организация</field>
+      </linkByType>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="bf88ba31-0f84-4596-8aff-540708de28f4">
+      <name>Лицензия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Лицензия</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ОсновныеСредства</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="3fde2377-880a-462e-a39e-3b3380e71c4c">
+      <name>ИдентификаторПрограммы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Идентификатор программы</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ИдентификаторыПрограмм</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="7c475a27-1abc-4f68-b562-d388406fe361">
+      <name>ВидДвижения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид движения</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>EnumRef.ВидДвиженияНакопления</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="56d9d653-4d11-4722-903a-fc058924b8ae">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

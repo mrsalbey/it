@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="63a5a7cd-8a46-40ef-8865-003644713f89">
+  <name>УправлениеЛентойНовостейСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление лентой новостей сервер</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+  <serverCall>true</serverCall>
+  <privileged>true</privileged>
+</mdclass:CommonModule>

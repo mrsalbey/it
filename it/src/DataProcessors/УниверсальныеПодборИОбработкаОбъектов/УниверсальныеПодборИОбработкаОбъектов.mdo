@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fcd87b48-3721-4e76-8daf-1fb9770ebab7">
+  <producedTypes>
+    <objectType typeId="2478828d-5662-4125-800a-2f289efdc3ac" valueTypeId="5278864d-10b8-4276-8687-149486af8e18"/>
+    <managerType typeId="414c92c0-885f-4c6e-8e8d-5d8f9c67a6a5" valueTypeId="ee6392ca-17ab-4b2c-88d8-c4a6ba483573"/>
+  </producedTypes>
+  <name>УниверсальныеПодборИОбработкаОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Универсальные подбор и обработка объектов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УниверсальныеПодборИОбработкаОбъектов.Form.ПодборИОбработка</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="05f04547-7d06-4a53-88cb-d4b3ac48f311">
+    <name>ПодборИОбработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора и обработки объектов</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9326aad0-8b9c-4284-8cae-31e651b784b7">
+    <name>ФормаОтбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отбора</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1f9fc8f2-9976-4781-90c4-21c34d56763f">
+    <name>ПроизвольныйАлгоритм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Произвольный алгоритм</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="70d7fecb-4b35-4f99-8406-e1e0aee2f1bc">
+    <name>УстановкаРеквизитов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установка реквизитов</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5a05ef06-2e01-4518-b367-378079d7b01f">
+    <name>ШаблонОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон обработки</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="65cd61b2-32a0-430d-b3f1-6b134715c6b1">
+    <name>ПеренумерацияОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перенумерация объектов</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8cdd4c48-aae3-4ae5-a1a0-9e2a716c991b">
+    <name>ПометитьНаУдаление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пометить на удаление</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="539cd105-0b2e-4014-a716-c96e0f64f7b6">
+    <name>ПровестиДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Провести документы</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="aae58687-73bc-4685-ad33-af9fd8890872">
+    <name>ОтменитьПроведениеДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отменить проведение документов</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

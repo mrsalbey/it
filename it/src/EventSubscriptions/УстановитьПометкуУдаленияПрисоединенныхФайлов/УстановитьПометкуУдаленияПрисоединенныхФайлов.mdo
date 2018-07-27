@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed3ab13d-bda3-419c-8886-9bfe5c777551">
+  <name>УстановитьПометкуУдаленияПрисоединенныхФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установить пометку удаления присоединенных файлов</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.ОсновныеСредства</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ПрисоединенныеФайлы.УстановитьПометкуУдаленияПрисоединенныхФайлов</handler>
+</mdclass:EventSubscription>

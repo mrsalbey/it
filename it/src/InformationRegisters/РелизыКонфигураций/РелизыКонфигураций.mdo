@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ccc01374-be44-4c69-b26c-31701c272eb6">
+  <producedTypes>
+    <selectionType typeId="a99bc240-7fb9-487e-991e-04d84e0eed1c" valueTypeId="0e8fd312-2d52-4ef9-8d91-fee8104230fa"/>
+    <listType typeId="6362c264-4ac7-4b56-9d87-e9e6d2af86ce" valueTypeId="b6b43183-3e4d-48f9-84f3-dcc429a4d099"/>
+    <managerType typeId="7342f68a-dd0c-4206-a9fb-6f3d395b3050" valueTypeId="50c3b76f-e0b8-478a-9b57-cedde3ac6ad1"/>
+    <recordSetType typeId="7f7c2da8-1c4e-42c7-96b9-35a598f1bb97" valueTypeId="6a6d8499-e732-4789-a30e-7e87975b7841"/>
+    <recordKeyType typeId="656db250-5f8a-4908-9cfa-d50a86a1c72b" valueTypeId="1f5bfd0a-8247-471a-8b10-9ce2b9b60368"/>
+    <recordType typeId="910729f6-a52b-49a1-a8ec-cebf8e4689e7" valueTypeId="1bc3da31-6979-441f-acaa-1a688aab6d6f"/>
+    <recordManagerType typeId="ae45adb9-d84c-45e7-a187-e69382d8fcc2" valueTypeId="55cea0bb-2fc1-4645-8ec8-1b2aef52909f"/>
+  </producedTypes>
+  <name>РелизыКонфигураций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Релизы конфигураций</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.РелизыКонфигураций.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d4422262-a7b9-4772-a197-db6a9021be4a">
+    <name>Релиз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Релиз</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Релизы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="f694be78-b105-4c60-8530-08f145df362b">
+    <name>ДатаПубликации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата публикации</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>80</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="a6a6f2fd-e004-42e3-ad16-2620501a28fa">
+    <name>Конфигурация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конфигурация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Конфигурации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="6b4130b0-28ad-4135-b9e6-43c261216658">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

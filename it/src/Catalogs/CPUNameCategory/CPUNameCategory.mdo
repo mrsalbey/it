@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dfd381b8-133a-4399-9ba4-07feca144848">
+  <producedTypes>
+    <objectType typeId="1c3d65b8-8b60-4f2c-a143-48658086fe99" valueTypeId="07d20a72-a649-4c1f-968d-4abc2855e634"/>
+    <refType typeId="a912cfe5-bbc9-48be-83ba-be94e7d9d123" valueTypeId="1b19a100-b2fe-4847-b1af-f782372b7f7a"/>
+    <selectionType typeId="6345b5c6-7081-47ad-8a9d-03690a396cb5" valueTypeId="fa26dafd-bbc5-4b0a-9e75-66b78d434bd7"/>
+    <listType typeId="5396359f-8ed4-414b-a187-1124ed5c9708" valueTypeId="534eb138-f84e-4780-9e36-81ebc38b0a87"/>
+    <managerType typeId="92a8e4a0-5ab1-44a4-a317-b387d3ceeeef" valueTypeId="b6b63db9-007f-49c2-8961-1ae97d020cb3"/>
+  </producedTypes>
+  <name>CPUNameCategory</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категория процессора</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.CPUNameCategory.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.CPUNameCategory.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>80</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

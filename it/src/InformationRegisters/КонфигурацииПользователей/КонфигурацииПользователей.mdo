@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b3b8557-6c7d-4058-b730-aacdc79aa4f1">
+  <producedTypes>
+    <selectionType typeId="2606649c-7f33-4ce0-b11e-d41519a47f43" valueTypeId="1764a17e-1033-4fb6-8213-adcfeebeeb07"/>
+    <listType typeId="c7693290-7d98-41b5-80e6-42b3bbf50198" valueTypeId="c2433b64-b6a2-4dd0-a820-b54b76f75605"/>
+    <managerType typeId="9da95819-ba2f-4eca-b85d-1c50bad3f9ab" valueTypeId="62f23aa4-339c-4924-aa69-8226da26fcaa"/>
+    <recordSetType typeId="48877f1c-695e-4562-a1df-da928d49c6c7" valueTypeId="babf5a09-e4c5-4ca1-807c-3dd160c3e507"/>
+    <recordKeyType typeId="4dff55cf-95da-4b96-a7f6-bb8af7f6afd1" valueTypeId="bb454aeb-3397-48ad-890c-ac4a9fa68e14"/>
+    <recordType typeId="6079c5a9-2e32-462c-9855-f591cec7a9c5" valueTypeId="c36ec1e8-c572-4a90-94df-3e5d010e8b9c"/>
+    <recordManagerType typeId="0602c8f2-73ec-484b-a935-2b72ba588139" valueTypeId="fe86030d-fe50-435c-83e1-15a8ae149ca1"/>
+  </producedTypes>
+  <name>КонфигурацииПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Конфигурации пользователей</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7b3454d5-f08d-4852-9b1f-6fee9e8437ae">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="889b0fff-dce1-4e3e-83da-18359e7504a8">
+    <name>ФизЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="67abb4af-d470-47e3-9e6c-4ac303490337">
+    <name>Конфигурация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конфигурация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Конфигурации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

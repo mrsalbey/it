@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="28a5d7c0-e527-45bd-9fee-4cfe1109dab6">
+  <producedTypes>
+    <selectionType typeId="bbc76845-76a1-459d-9df1-2087215423dd" valueTypeId="95019dc4-1133-42ff-9bda-0a47cbdbb350"/>
+    <listType typeId="42964714-ff15-4b3b-8eb7-c9851b2b700d" valueTypeId="32b62b45-e141-41e1-a774-925a2ef6b6f6"/>
+    <managerType typeId="b1399896-4fc6-4e90-8298-a6beeff502ec" valueTypeId="66a1e3ec-b75b-4dee-84cf-33f82d7b29fc"/>
+    <recordSetType typeId="1c295e37-a047-40ad-8b5a-434f4d51bc82" valueTypeId="3d88d556-a3e8-4bac-bf11-9329179819cb"/>
+    <recordKeyType typeId="b93bff9c-d07f-42a6-8310-fe3635b0a93e" valueTypeId="d7b8c44e-bd94-4f55-9975-5092ea733e57"/>
+    <recordType typeId="877b5724-2baf-495a-8383-d410dfe2d04f" valueTypeId="9b268412-1605-4c05-bacc-e905ec962a53"/>
+    <recordManagerType typeId="23d7c5c9-b290-46a3-96b0-34f991076813" valueTypeId="3a8f5e6f-207c-4e7b-8ee4-defc81a9bc3c"/>
+  </producedTypes>
+  <name>СписаныеОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Списаные ОС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7eb80325-cb02-4bf9-b4bd-04641277c5cf">
+    <name>ДатаСписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата списания</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1984c51d-7833-430d-832c-db18061b3543">
+    <name>ОсновноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное средство</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>InformationRegister.МестонахождениеОС.StandardCommand.OpenList</command>
+      <visible>
+        <common>true</common>
+      </visible>
+    </visibilityFragments>
+  </commandsVisibility>
+  <subsystemsOrder>
+    <subsystems>Subsystem.Компьютеры.Subsystem.Компьютеры</subsystems>
+    <subsystems>Subsystem.Компьютеры.Subsystem.РаспределениеКомпьютеров</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

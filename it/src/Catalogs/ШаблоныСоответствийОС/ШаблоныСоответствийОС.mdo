@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9967cf48-a152-447c-bd00-7cc7c296ee87">
+  <producedTypes>
+    <objectType typeId="064a6669-1021-4e4b-a963-d77cd8eefac6" valueTypeId="da86a85e-2d59-4b60-a3fc-3c8f50a25c25"/>
+    <refType typeId="1ec3f2e3-7be3-44ef-b839-3cf659e0acf7" valueTypeId="2f36fe44-1cd3-448a-bc0c-cf299dd06591"/>
+    <selectionType typeId="6591dc1b-e743-4b9d-80fa-d7672a7e4023" valueTypeId="d5efd613-0ff9-49e2-ae87-8da6b93bb52c"/>
+    <listType typeId="ce37d9fa-12eb-46a2-a29b-56bdaab8c9dd" valueTypeId="d792c6c4-ca5f-43e0-8174-6e92c38bfef6"/>
+    <managerType typeId="de1e6f9a-421c-49a7-af7e-3a2921da2c35" valueTypeId="a91d915c-1a09-4607-92f6-2526bffbdbf8"/>
+  </producedTypes>
+  <name>ШаблоныСоответствийОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблоны соответствий ОС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ШаблоныСоответствийОС.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ШаблоныСоответствийОС.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="e7a9e227-4ee1-4d5e-9a20-98f54c98ab56">
+    <name>ИдентификаторПрограммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор программы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ИдентификаторыПрограмм</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

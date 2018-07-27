@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a617885-5f77-42b6-b599-dfe5698b48f2">
+  <producedTypes>
+    <refType typeId="5f6d0df9-d201-44ef-9f9c-ffef8c61bac6" valueTypeId="1ea8c7bb-5f2a-4ce8-a3b3-e3c8fdd540a6"/>
+    <listType typeId="b1edcb4f-3b98-44f5-9e1b-e3eb96758739" valueTypeId="3426324d-240e-48f8-8ceb-e887961bd548"/>
+    <managerType typeId="33f3378e-e138-4394-bac1-faef633fa385" valueTypeId="610a5874-e54a-456a-8929-6a21746e9148"/>
+  </producedTypes>
+  <name>ВариантыАнализаЖивогоИМертвогоСофта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты анализа живого и мертвого софта</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="612ec194-4aad-48ce-89eb-01556762770f">
+    <name>АнализЖивогоСофта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Анализ живого софта</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="ea261468-9016-4082-8f04-cffd9f5b1c99">
+    <name>АнализМертвогоСофта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Анализ мертвого софта</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

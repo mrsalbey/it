@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ee66151-2459-4cf4-b67a-f58b598e60bb">
+  <name>ПрограммноеОбеспечение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Программное обеспечение</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ИдентификаторыПрограмм</content>
+  <content>Catalog.ШаблоныСоответствийОС</content>
+  <content>Report.ЦеныПоПрограммам</content>
+  <content>DataProcessor.УстановкаЦенПоПрограммам</content>
+  <content>Document.КомплектацияОбъектовОС</content>
+  <content>Catalog.КатегорииПО</content>
+  <content>Report.АнализРазмещенияОбъектов</content>
+  <parentSubsystem>Subsystem.Программы</parentSubsystem>
+</mdclass:Subsystem>

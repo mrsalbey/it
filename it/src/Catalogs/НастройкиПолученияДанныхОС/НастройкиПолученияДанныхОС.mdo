@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d2a19943-88b7-4c53-a54d-360c8baa4399">
+  <producedTypes>
+    <objectType typeId="24de2354-bd6e-43d2-a7ab-0657c258021e" valueTypeId="f60b6914-cb29-4b11-8e2b-b5f8eec16491"/>
+    <refType typeId="8cf9c974-076c-40af-8a6d-e428003a1de3" valueTypeId="06ab0a62-e407-419e-a5cb-b409faa46e2f"/>
+    <selectionType typeId="ace785f3-b7c1-4fb2-bfed-7d27ecfde774" valueTypeId="aed24010-24cf-414b-bcea-1f8c85bf4efd"/>
+    <listType typeId="de449fdc-3cc3-4a28-8fbe-b55240eba8aa" valueTypeId="4bd72993-a9b0-413a-b36a-d9c5041cdfe2"/>
+    <managerType typeId="8b9ec143-40c8-43b2-a78b-b8954578cce1" valueTypeId="6322335e-422b-45a5-b599-c4278ed3d048"/>
+  </producedTypes>
+  <name>НастройкиПолученияДанныхОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки получения данных ОС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.НастройкиПолученияДанныхОС.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.НастройкиПолученияДанныхОС.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.НастройкиПолученияДанныхОС.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="e112aa38-061e-446f-9486-60e7f55b5208">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f18000cf-2e90-42b4-b160-394db60dd6fe">
+    <name>Ф_ОтбиратьПоОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбирать по организации</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="518655dd-2afd-4456-a58a-023df8ac02f4">
+    <name>ИмяДомена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя домена</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ИдентификаторыДоменов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="eb94f4f9-f3d5-428a-91d9-b8a823d31f44">
+    <name>ОбновлятьКомпьютеры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновлять компьютеры</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="50145661-0224-43a6-bc05-bdee34b43897">
+    <name>ОбновлятьОбъекты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновлять объекты</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="87ee49d4-dad7-40ca-917c-bd4044340c39">
+    <producedTypes>
+      <objectType typeId="02329493-2c0e-49b8-85b8-5d1e58098a75" valueTypeId="086cab47-491a-4638-9f60-a85fc56a35f3"/>
+      <rowType typeId="0f5b7016-8162-4a98-b575-6cb40168caa4" valueTypeId="701a58e5-79a8-4b5d-9f7b-201a801fb037"/>
+    </producedTypes>
+    <name>СписокПодключений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список подключений</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="d4b40815-c5fd-42fb-91f8-fc163186b383">
+      <name>УдалитьИмяДомена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Удалить имя домена</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ИдентификаторыДоменов</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e8fe60b4-cd10-4ae5-88ff-2620a4c33edd">
+      <name>ПользовательLDAP</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пользователь LDAP</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ee9b68c9-b0e1-45c8-880e-88e33aabeb75">
+      <name>ПарольLDAP</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пароль LDAP</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <passwordMode>true</passwordMode>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="fb70ac83-1f2f-4850-8d6b-9cc0e20f02c3">
+    <producedTypes>
+      <objectType typeId="e7d0a644-d3c8-4d0c-8e3e-58362e95eccd" valueTypeId="ced707bc-28d9-4227-bd46-a7242a46d7b2"/>
+      <rowType typeId="a7162c90-9753-493f-bee7-241b2f999946" valueTypeId="30e9e0f2-282e-4640-b662-e6a044599133"/>
+    </producedTypes>
+    <name>РасположениеИнформацииОбОбъектахВОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расположение информации об объектах в ОС</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="eee9cf9c-14d6-4606-83a7-071d2c30cb75">
+      <name>КаталогЗагрузки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Каталог загрузки</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="58304537-ae1a-4a03-afff-4072f74bc738">
+    <producedTypes>
+      <objectType typeId="451fc34a-73c4-4349-93f5-aa4b0f8214aa" valueTypeId="458c5ff6-adba-485a-b715-3215daa9823b"/>
+      <rowType typeId="96915f90-3827-4278-a098-46e99f89e3f9" valueTypeId="de2e113e-ad2a-4a08-ac9c-5b7d53d6cbf6"/>
+    </producedTypes>
+    <name>ИсторияЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>История загрузки</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="e4e9f0e8-c4b2-44e9-8c8b-ec273cde07ed">
+      <name>ДатаЗагрузки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата загрузки</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ce39232f-0ee5-45f1-8223-daa27f8a2d0b">
+      <name>ДанныеОЗагрузки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные о загрузки</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>ValueStorage</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="a39ae00b-d3aa-4835-81cb-4d6416162224">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

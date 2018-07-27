@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c31cb76e-9f9b-44d6-8e83-025e8a2ecd51">
+  <name>СтруктураПодчиненности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Структура подчиненности</value>
+  </synonym>
+  <comment></comment>
+  <group>FormNavigationPanelImportant</group>
+  <commandParameterType>
+    <types>DocumentRef.ПланЗакупокЛицензий</types>
+    <types>DocumentRef.ПеремещениеОС</types>
+    <types>DocumentRef.КомплектацияОС</types>
+    <types>DocumentRef.ПоступлениеОС</types>
+    <types>DocumentRef.РаспределениеЛицензий</types>
+    <types>DocumentRef.СписаниеОС</types>
+    <types>DocumentRef.ПокупкаПоддержкиЛицензий</types>
+    <types>DocumentRef.КомплектацияОбъектовОС</types>
+    <types>DocumentRef.ВводНачальныхОстатковОС</types>
+  </commandParameterType>
+  <representation>Auto</representation>
+  <picture xsi:type="core:PictureRef">
+    <picture>0:b2cb5729-3ef3-4fce-a7dd-35aa34de1af4</picture>
+  </picture>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c93a486f-1300-4e54-8059-db3cdb9390a5">
+  <producedTypes>
+    <selectionType typeId="65216153-e268-4a1f-aa73-cb2c1c377aaf" valueTypeId="4d52542d-7d9a-41ec-a930-af205efd43b9"/>
+    <listType typeId="5b4cb527-08d5-4f70-a05f-4553508bec8f" valueTypeId="4d50abe7-1e64-4720-bcf5-a503e0be1f68"/>
+    <managerType typeId="e170e56e-066d-4e1d-b4a0-414ff282b5f0" valueTypeId="5d604356-473e-40ef-8a2e-0b70b71d0fb3"/>
+    <recordSetType typeId="13bb7d10-e358-4a5a-904d-7b4abe6925c2" valueTypeId="489fd6fa-f40a-478c-97d4-34d545671464"/>
+    <recordKeyType typeId="f083af73-4d81-4b3e-82ac-80a2a46ee9f0" valueTypeId="cd430276-1f53-4547-8a22-2fc746db00ce"/>
+    <recordType typeId="042e023e-6bbc-4996-9ce1-dcbacd62feac" valueTypeId="9147c50f-484d-46c0-b322-00c8a2f330a2"/>
+    <recordManagerType typeId="2804c50f-cfc8-416c-bd2f-3912d074c9f0" valueTypeId="2abdb17d-f421-4511-a684-1e0801ac6cbf"/>
+  </producedTypes>
+  <name>ЦеныПрограмм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены программ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4e1461e8-ae1c-46d1-994c-d7e6267c8375">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="56789f3d-145a-43a0-bc57-09c03241461b">
+    <name>ЦенаСПоддержкой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена с поддержкой</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="efb1b8a4-4999-4e0c-8013-3a845fe16f77">
+    <name>ЦенаПоддержки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена поддержки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e83423a0-95ce-470c-8479-b023e530baaa">
+    <name>Программа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Программа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ИдентификаторыПрограмм</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

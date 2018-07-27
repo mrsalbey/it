@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="319354e5-abd6-4313-bc94-afaba42442b6">
+  <producedTypes>
+    <selectionType typeId="666edab3-4310-4a9c-b5fb-4a118dce0c77" valueTypeId="554363c2-e4dd-4079-a061-b85a2e3da8be"/>
+    <listType typeId="ae713580-df69-4310-8c70-e933cecf1fa1" valueTypeId="4283911e-2eeb-465b-8021-9ae16d33496b"/>
+    <managerType typeId="248e161a-6de5-4b26-8633-74e6555fa332" valueTypeId="1f8c137a-e765-4e3d-a2e4-70cc6220ed90"/>
+    <recordSetType typeId="129ca892-0154-4a8e-9421-144ce60c1db1" valueTypeId="bf72c302-bd3d-4de5-b034-672390f6a212"/>
+    <recordKeyType typeId="9ff7b7d6-dcb2-458a-8304-f373b1d6d0ed" valueTypeId="9b114e64-97e6-457c-91f7-8ba990204b52"/>
+    <recordType typeId="0719d03b-8a1b-4d70-afb9-f768921ef726" valueTypeId="00e321ec-1c94-4249-85b6-d171fb2d0c40"/>
+    <recordManagerType typeId="de2603a2-efca-4dbf-8599-7a9f72509803" valueTypeId="4eb334a2-d8a2-4918-a5c0-41c8b252f5b1"/>
+  </producedTypes>
+  <name>ДоменыКомпьютеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Домены компьютеров</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="aa08ad71-a0c5-4a05-adca-86673502933b">
+    <name>ИмяДомена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя домена</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ИдентификаторыДоменов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f2fc3988-3d3a-4e7f-8eb6-a9518fdf1673">
+    <name>ИдентификаторКомпьютера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор компьютера</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

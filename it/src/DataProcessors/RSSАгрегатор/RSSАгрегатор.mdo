@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="597ec234-bb4b-45b0-9b60-376cebd0b951">
+  <producedTypes>
+    <objectType typeId="40068e44-a682-4832-88a9-c41a85ca9cf0" valueTypeId="7555fed0-dd2b-494a-8666-5038cc426f4b"/>
+    <managerType typeId="fc0df41d-1a97-4343-8508-b9ea8bcc6fae" valueTypeId="cac69fac-d574-4fb1-b8ed-bb301978257c"/>
+  </producedTypes>
+  <name>RSSАгрегатор</name>
+  <synonym>
+    <key>ru</key>
+    <value>RSSАгрегатор</value>
+  </synonym>
+  <comment></comment>
+  <defaultForm>DataProcessor.RSSАгрегатор.Form.Форма</defaultForm>
+  <attributes uuid="9d454265-0c02-4f6f-870c-44413b892b26">
+    <name>Адрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="53113884-c000-4646-8e38-0560644875f6">
+    <producedTypes>
+      <objectType typeId="f0060c83-81d5-4493-9640-8b15e98cf6cb" valueTypeId="9e0cdd0d-e47b-44e6-80fe-d8c549020216"/>
+      <rowType typeId="5819c84a-67eb-4d62-a415-2d7b4a771e5f" valueTypeId="41556728-e3b5-439b-8d11-ab88265b2b72"/>
+    </producedTypes>
+    <name>Элементы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Элементы</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="0a2c4102-2973-4712-ad00-6bfa4ebe6d27">
+      <name>Заголовок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заголовок</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="5b375975-0075-4ae6-948c-b3e5d7a0b7eb">
+      <name>Ссылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ссылка</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="e0452aa5-845d-4a83-acc9-aec8f1886594">
+      <name>Категория</name>
+      <synonym>
+        <key>ru</key>
+        <value>Категория</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="7d7f86e3-1f28-407e-8d96-e9e80f7af9b3">
+      <name>Текст</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текст</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="28242536-54cd-4bdf-8e5d-c1b0e0c60675">
+      <name>ДатаПубликации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата публикации</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>80</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="193b9eaa-ac1f-4b3f-8a1b-183ce7710ac3">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

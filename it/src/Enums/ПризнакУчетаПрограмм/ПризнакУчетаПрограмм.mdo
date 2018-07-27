@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eb29f4c8-7981-407d-8caf-6d4d36d66023">
+  <producedTypes>
+    <refType typeId="c4c53f94-3aae-4212-b7a6-86f58e90c5a8" valueTypeId="b8a80a57-f5b0-4e27-870d-8f5a13eaf141"/>
+    <listType typeId="d13c6414-3e8b-47b0-8df7-ba3ba3e58802" valueTypeId="784aed2b-04e1-43a8-9e63-1bb6df0dfbda"/>
+    <managerType typeId="4f2fdc91-73c7-4b10-986e-90b2f5c91655" valueTypeId="98fdbdcd-6449-4a2d-a4d0-77014c45bf28"/>
+  </producedTypes>
+  <name>ПризнакУчетаПрограмм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Признак учета программ</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f913412a-638a-4277-9a06-d1d74b725f14">
+    <name>Удалить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="816f7f02-cbb9-4490-be12-6238ee0ddfed">
+    <name>НеУчитывать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не учитывать</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="aae50d0b-e182-4e21-8882-93272ecc1ac9">
+    <name>Учитывать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="fb45a7af-eae3-4c92-aeee-ee09e9489b80">
+    <name>НеОпределено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не определено</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f71f2941-e9b8-480b-8912-378047dcca6c">
+  <producedTypes>
+    <objectType typeId="5b69c850-edea-4e47-a2af-2632309de60c" valueTypeId="2d50df74-867e-42c0-ac80-f4eaea862940"/>
+    <refType typeId="d0fb98fc-ae4c-4bae-814e-64465b9ab450" valueTypeId="07a7f9c5-ce6a-47f6-89f9-a2fec6fb632b"/>
+    <selectionType typeId="1c492188-a3fc-4ca8-b727-14af9a6a94f3" valueTypeId="69e6e879-517c-46be-9232-cdcb358ac8c8"/>
+    <listType typeId="ce123073-cb30-41f9-ba10-20ed37a26b5e" valueTypeId="929bf2e9-c766-42c6-b5ed-48a0910eef36"/>
+    <managerType typeId="30fc5533-1e72-4142-92b6-f7d1c60375fc" valueTypeId="4dadacb1-5da7-4f3e-ab7a-3fd5fde2e999"/>
+  </producedTypes>
+  <name>Помещение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помещение</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Помещение.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Помещение.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="3e6d2d48-67bc-481a-b64e-54bd4ddb5d19">
+      <name>Москва</name>
+      <description>Москва</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

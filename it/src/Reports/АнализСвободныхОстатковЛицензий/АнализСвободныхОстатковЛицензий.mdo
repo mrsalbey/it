@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e4d1c30-fe5d-427b-b4be-26a2f9d4b108">
+  <producedTypes>
+    <objectType typeId="89efe264-c833-4d17-8baf-e2a7802974b9" valueTypeId="273f52b3-0232-46df-b006-849fbef6018c"/>
+    <managerType typeId="5864247d-c971-4459-b499-03f77321f748" valueTypeId="3282f2fc-8671-4ea5-a347-d952b7dcbce1"/>
+  </producedTypes>
+  <name>АнализСвободныхОстатковЛицензий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ свободных остатков лицензий</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.АнализСвободныхОстатковЛицензий.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.АнализСвободныхОстатковЛицензий.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="f69d42b7-2dc9-493d-8fce-8602ec6e840c">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="515b0116-a583-4a3b-931b-780db17259e7">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

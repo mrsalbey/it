@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba912b45-f3a3-47f8-8854-aeb08e193044">
+  <producedTypes>
+    <refType typeId="1ac19475-416a-44f4-b071-78626e74c378" valueTypeId="dd38b1df-76f4-4312-976e-9bcd21bb0921"/>
+    <listType typeId="a65ac618-4f6a-476f-8f92-24a05c48fb5e" valueTypeId="dc8f6e9c-188d-418a-af37-5a37cc281027"/>
+    <managerType typeId="9f261c01-1519-4aa5-9426-a857d1f4fdf5" valueTypeId="efd56232-85b7-43d0-9dc1-ebd84d959362"/>
+  </producedTypes>
+  <name>ВариантыРазмещенияЛицензий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты размещения лицензий</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d20c88b3-644e-40e3-8c7e-cdeff0adc858">
+    <name>НаРабочееМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>На рабочее место</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="30ef9954-7c88-455f-9291-765fb188e37e">
+    <name>НаОрганизацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>На организацию</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

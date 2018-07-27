@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9899248c-fecd-47cb-936f-1b6995f13f3d">
+  <name>ПриПроведенииСписаниеОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>При проведении списание ОС</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>DocumentObject.СписаниеОС</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.УправлениеУчетнымиЗаписямиСервер.ПриПроведенииСписаниеОСОбработкаПроведения</handler>
+</mdclass:EventSubscription>

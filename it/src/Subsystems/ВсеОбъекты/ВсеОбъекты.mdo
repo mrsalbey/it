@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e2245b1c-d4ab-42f8-99af-c799a185f62d">
+  <name>ВсеОбъекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Все объекты</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>DataProcessor.КонсольЗапросов_82</content>
+  <content>Document.РаспределениеЛицензий</content>
+  <subsystems>Справочники</subsystems>
+  <subsystems>Документы</subsystems>
+  <subsystems>Отчеты</subsystems>
+  <subsystems>Обработки</subsystems>
+</mdclass:Subsystem>

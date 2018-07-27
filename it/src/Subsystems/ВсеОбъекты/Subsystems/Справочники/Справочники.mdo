@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="24642c2b-320a-4d1e-a98a-df374bf1a961">
+  <name>Справочники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справочники</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.ВидыЛицензий</content>
+  <content>Catalog.ГруппыПользователей</content>
+  <content>Catalog.ДолжностиОрганизаций</content>
+  <content>Catalog.ИдентификаторыПрограмм</content>
+  <content>Catalog.КатегорияОсновногоСредства</content>
+  <content>Catalog.Контрагенты</content>
+  <content>Catalog.НастройкиПолученияДанныхОС</content>
+  <content>Catalog.ОбъектыКомпьютера</content>
+  <content>Catalog.Организации</content>
+  <content>Catalog.ОсновныеСредства</content>
+  <content>Catalog.ПодразделенияОрганизаций</content>
+  <content>Catalog.Пользователи</content>
+  <content>Catalog.Помещение</content>
+  <content>Catalog.СобытияОС</content>
+  <content>Catalog.УчетныеЗаписиЭлектроннойПочты</content>
+  <content>Catalog.ФизическиеЛица</content>
+  <content>Catalog.ШаблоныСоответствийОС</content>
+  <content>Catalog.ДоговораКонтрагентов</content>
+  <content>9ec221cf-6b78-4b9c-b3b8-6979b8e03834</content>
+  <parentSubsystem>Subsystem.ВсеОбъекты</parentSubsystem>
+</mdclass:Subsystem>

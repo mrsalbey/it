@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="22cd3f40-90c4-4aae-856e-08f8eaef9a30">
+  <producedTypes>
+    <objectType typeId="00ad4662-01d7-4bb0-82a2-b0384067483b" valueTypeId="e8b9aeb4-b5ec-4f70-826e-a39b3853ce55"/>
+    <managerType typeId="8e3653b6-fbe7-4e9d-8045-f9bdd9623dc8" valueTypeId="9ccfb082-a283-4fa0-bc02-2716efa6cea0"/>
+  </producedTypes>
+  <name>ХарактеристикиКомпьютеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Характеристики компьютеров</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ХарактеристикиКомпьютеров.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="e3f36206-05bf-493e-88f5-3bf384580f61">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

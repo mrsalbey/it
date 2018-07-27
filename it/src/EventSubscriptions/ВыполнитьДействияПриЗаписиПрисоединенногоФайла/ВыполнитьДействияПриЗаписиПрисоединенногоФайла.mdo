@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dff2de45-4fc8-441c-a9fa-89deb653be12">
+  <name>ВыполнитьДействияПриЗаписиПрисоединенногоФайла</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполнить действия при записи присоединенного файла</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.ПокупкаПоддержкиЛицензийПрисоединенныеФайлы</types>
+    <types>CatalogObject.ПоступлениеОСПрисоединенныеФайлы</types>
+    <types>CatalogObject.ОсновныеСредстваПрисоединенныеФайлы</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ПрисоединенныеФайлы.ВыполнитьДействияПриЗаписиПрисоединенногоФайла</handler>
+</mdclass:EventSubscription>

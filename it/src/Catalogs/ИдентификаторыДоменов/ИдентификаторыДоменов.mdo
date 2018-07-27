@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="365c5946-1dc6-4363-b341-618349f9e58b">
+  <producedTypes>
+    <objectType typeId="5fb8f57d-c5a8-42ee-93f9-18cd7e742390" valueTypeId="2bff3cf0-d839-409a-8156-d2ae2c74cb12"/>
+    <refType typeId="07f9e0b5-2b7d-4bb8-8806-98ea07bf2ce9" valueTypeId="0281e801-f340-4844-9b11-82db9e0b0c9d"/>
+    <selectionType typeId="4eec74dd-e56c-4ef3-a544-0679e7717fc3" valueTypeId="39a60404-5c71-4e82-b09f-b5033f0c88cd"/>
+    <listType typeId="75c6d289-6d5e-44ea-b0cd-52380bf433b7" valueTypeId="1acb792f-1f14-4d6a-88f7-ad2638e44a27"/>
+    <managerType typeId="fb1f7c8b-f730-46ec-bb4f-0bb32d953796" valueTypeId="54e421c1-11e1-4fdf-a3cd-c5993f39ed0e"/>
+  </producedTypes>
+  <name>ИдентификаторыДоменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Идентификаторы доменов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ИдентификаторыДоменов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ИдентификаторыДоменов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>30</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="be806bd3-1ec9-4721-aa44-15a79605de2f">
+    <name>НаименованиеСинхронизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование синхронизации</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

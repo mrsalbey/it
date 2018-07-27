@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a4c2268f-64bd-4e11-bb6f-0e7c3e8dea7d">
+  <producedTypes>
+    <objectType typeId="f41b7296-1019-49b9-aefc-74929ac35744" valueTypeId="04529f4b-725c-43ed-8254-438b746b1068"/>
+    <managerType typeId="d63acf33-a770-40eb-b7ff-9f4341f15427" valueTypeId="1752d4df-78c9-4d4f-af9d-f5edb73cb2b3"/>
+  </producedTypes>
+  <name>ЗагрузкаДанныхПоОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка данных по ОС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаДанныхПоОС.Form.Форма</defaultForm>
+  <attributes uuid="1ec0555f-7a2a-4245-85c3-72e596028da3">
+    <name>Ф_ЗафиксироватьДанныеЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зафиксировать данные загрузки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c4b5e191-51c0-43b8-93e3-dd80dde83836">
+    <name>Ф_ПровестиСозданныеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Провести созданные документы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="cbf43fdf-8a6f-4d1d-a3bd-061f290d6669">
+    <producedTypes>
+      <objectType typeId="aff74d04-7457-40ed-9d53-747879d4481d" valueTypeId="9e0f98c9-e97c-4b57-81bc-0c321e945d1e"/>
+      <rowType typeId="4bbcd782-cef3-49c8-b3c8-0c1f911e2f4c" valueTypeId="8dc52120-e3d1-40b8-a7e0-a9b4ab9c60d8"/>
+    </producedTypes>
+    <name>СписокНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список настроек</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="01e64843-19aa-4d4f-a851-d5ba874331c7">
+      <name>Ф_Пометка</name>
+      <synonym>
+        <key>ru</key>
+        <value>П</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ec83576f-4144-447e-8744-b974ab7263c3">
+      <name>НастройкаПолученияДанныхОС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Настройка получения данных ОС</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.НастройкиПолученияДанныхОС</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="e1917735-6cb8-4851-96d2-e8a127f354bd">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="02065b96-634f-4dd8-a328-5c5afa9a1f3b">
+    <name>МакетПечати</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет печати</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:DataProcessor>

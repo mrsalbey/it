@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e5c115df-7c5e-4133-bcc7-e3a723cd9f1b">
+  <producedTypes>
+    <refType typeId="7c5518ee-d6aa-4ae4-8710-19454edf4bba" valueTypeId="664e5d31-5d94-43c3-988e-c3c5c68fc1c8"/>
+    <listType typeId="5c8be4aa-65a7-44a2-8066-b455a043bfe4" valueTypeId="cbda34a8-6a4c-48ff-acbe-1a0ba6421c6a"/>
+    <managerType typeId="e024167d-676b-45cf-8d49-8559c2610736" valueTypeId="df4dbdb1-c983-4ed9-90bc-b6a9863b7840"/>
+  </producedTypes>
+  <name>ВариантДействияПриДеинсталяции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вариант действия при деинсталяции</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="6a0b93ce-0e28-4c70-8e36-53ade388e4fa">
+    <name>Удалять</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалять</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="d3f93c01-630c-4d43-bf04-faf44cc5a8de">
+    <name>Освобождать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Освобождать</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9bd4c3e8-293d-4c9d-b21a-d67fa2ad1360">
+  <producedTypes>
+    <selectionType typeId="7109cc1a-0dfc-496e-b2a5-fed185587616" valueTypeId="bbf56e8b-ee6f-4305-8c6a-343394b94a16"/>
+    <listType typeId="8567ac23-14f5-4b03-b143-d794b8f1ca3f" valueTypeId="7964d306-f779-4dc6-b4f9-c860a30a982a"/>
+    <managerType typeId="54b9d358-3b94-470a-a8a0-ab82593db3f1" valueTypeId="657c1470-82eb-4e41-8aeb-588d939c95aa"/>
+    <recordSetType typeId="e0a39109-28fa-4395-8043-a73d47668b5d" valueTypeId="8c72117a-9b44-46be-9bae-c154b6edab1a"/>
+    <recordKeyType typeId="9f2b8d08-dc8b-4598-871d-ff30c340a27b" valueTypeId="9768442c-06aa-49ca-84d0-77f1ee5c0c1f"/>
+    <recordType typeId="b70b2f8f-3475-46a8-ba8b-f46c395ffa91" valueTypeId="e99e08a6-8ca0-474c-8e34-9198236e7456"/>
+    <recordManagerType typeId="3b382da9-744e-4e55-b193-83b14636ab87" valueTypeId="558d8e64-7afc-4ea1-b439-c81903fd7566"/>
+  </producedTypes>
+  <name>МестонахождениеЛицензий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Местонахождение лицензий</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.МестонахождениеЛицензий.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="33c318ec-e356-4616-82c1-e6c07e9a9ac2">
+    <name>СерийныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийный номер</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="ac2f0eaf-3ab5-4ed3-b047-65d080957768">
+    <name>ИдентификаторКомпьютера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор компьютера</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9fb82440-c7a1-4f73-a3e8-5b4f39db8874">
+    <name>Лицензия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лицензия</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="fdb36e59-0a11-4486-bade-909b867c4d27">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

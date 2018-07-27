@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aff5c606-21bc-44bf-92b8-f77267ad00db">
+  <name>ПерепроведениеДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перепроведение документов</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.УправлениеУчетнымиЗаписямиСервер.ПерепровестиСписокДокументовТребующихПерепроведения</methodName>
+  <description></description>
+  <key></key>
+  <use>true</use>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

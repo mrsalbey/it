@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2be71b11-9124-4e87-9d42-d49d5279b366">
+  <producedTypes>
+    <selectionType typeId="e3732e34-d597-4586-9141-9d0eb664e9a8" valueTypeId="823a7b95-fd94-44f1-a870-d6aae24a1a77"/>
+    <listType typeId="34eca3e9-7fc3-499f-a081-7417ee64a037" valueTypeId="151b1fae-306a-439f-a730-3f8b51d64585"/>
+    <managerType typeId="42ffc223-4456-4649-b1d9-478198a3cf55" valueTypeId="dfdcdb22-25ab-4323-beff-8886944cfd84"/>
+    <recordSetType typeId="29f1dcdb-a9e4-420b-9fd1-785c32846cf3" valueTypeId="ab8f5765-c640-4235-99f9-1ab5961c0926"/>
+    <recordKeyType typeId="82d9ee04-9653-4e2f-bee2-c74cc236b8c4" valueTypeId="b473a53e-3b87-41fa-882d-f213f2bfcda6"/>
+    <recordType typeId="dc1aec8a-ba62-40de-9212-c50f7b901fc4" valueTypeId="62e97ca0-3a73-4137-ba4c-1fc106623952"/>
+    <recordManagerType typeId="db9d7ec3-5448-46ce-9013-7689fb0cf40a" valueTypeId="7ac662a7-ba9d-4eb3-8d57-35c34e2999ef"/>
+  </producedTypes>
+  <name>ДокументыТребующиеПерепроведения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы требующие перепроведения</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f791c26f-22bb-44ca-bfe8-e4412842ca01">
+    <name>ДатаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fce516c7-15cd-4fd5-a642-4028486f632f">
+    <name>КоличествоНеудачныхПроведений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество неудачных проведений</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a027192d-8e48-4f34-aa50-43ed3185362e">
+    <name>СообщениеОбОшибкеПроведения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение об ошибке проведения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="fc023121-ec4c-4139-a5a1-8d41fa88dcf8">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.КорректировкаРегистров</types>
+      <types>DocumentRef.ПоступлениеОС</types>
+      <types>DocumentRef.РаспределениеЛицензий</types>
+      <types>DocumentRef.СписаниеОС</types>
+      <types>DocumentRef.КомплектацияОбъектовОС</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1f315ed-df96-486f-ae90-51f056c8aefc">
+  <producedTypes>
+    <objectType typeId="95c1aee9-7f21-409d-9372-d8799a00e51d" valueTypeId="00d3b43b-7816-4eae-8ee8-ed1bc5e7e490"/>
+    <refType typeId="995e4a99-b12b-4544-8e49-ae5d12fd2bcc" valueTypeId="9739ae62-5a25-4c63-9c5b-2bce7c910e61"/>
+    <selectionType typeId="7e24c875-2360-4c64-b05e-1b2e0114d55a" valueTypeId="6f4e6db7-4859-402f-976e-8c8363b4678e"/>
+    <listType typeId="d69bb4cf-2619-4e0c-bccf-09f4634c9691" valueTypeId="c3436c8d-a4bb-4bd3-b578-cf805ba372a5"/>
+    <managerType typeId="e801620c-00e3-4183-b587-dbdadecba248" valueTypeId="beda205a-054e-4f5a-b109-547b10c10472"/>
+  </producedTypes>
+  <name>ВидыКонфигурации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды конфигурации</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыКонфигурации.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыКонфигурации.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>40</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="1ce6faf8-c19a-4f5a-a380-7c19d382edfe">
+      <name>КонфигурацииДляБеларуси</name>
+      <description>Конфигурации для Беларуси</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="0fd60960-19cd-4493-8952-464a5a9429e8">
+      <name>КонфигурацииДляКазахстана</name>
+      <description>Конфигурации для Казахстана</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="82013a55-8191-4038-ae6b-295326e66506">
+      <name>КонфигурацииДляКыргызстана</name>
+      <description>Конфигурации для Кыргызстана</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="af468eec-edb1-4a3e-8744-d9f88327ec07">
+      <name>КонфигурацииДляЛатвии</name>
+      <description>Конфигурации для Латвии</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="e5f9bedf-e92a-4dc9-90b1-8b35fe6588fe">
+      <name>КонфигурацииДляЛитвы</name>
+      <description>Конфигурации для Литвы</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="2735ef33-f78a-407a-81ca-537269ebac62">
+      <name>КонфигурацииДляМолдовы</name>
+      <description>Конфигурации для Молдовы</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="ce811618-c976-4376-a8cf-6daeb7432199">
+      <name>КонфигурацииДляРоссии</name>
+      <description>Конфигурации для России</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="34a8412c-4c76-48a4-b939-33378f5142bd">
+      <name>КонфигурацииДляУкраины</name>
+      <description>Конфигурации для Украины</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="552e4362-0afe-4d38-b6a1-dbe94a7a99d0">
+      <name>ОтраслевыеРешения</name>
+      <description>Отраслевые решения</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="e3247e00-b58d-4819-9d9c-a81457bd08fe">
+      <name>ТехнологическаяПлатформа</name>
+      <description>Технологическая платформа</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

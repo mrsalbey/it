@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4feb8402-be92-4b66-840e-d6df5ed9b93f">
+  <name>СинхронизацияДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Синхронизация данных</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ОбменДанными</picture>
+  </picture>
+  <content>Catalog.НастройкиПолученияДанныхОС</content>
+  <content>DataProcessor.ЗагрузкаДанныхПоОС</content>
+  <content>Catalog.ОбъектыКомпьютера</content>
+</mdclass:Subsystem>

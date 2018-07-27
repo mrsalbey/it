@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="103105d8-199d-4864-8e6a-464e6c94c5cb">
+  <producedTypes>
+    <objectType typeId="07c1292d-b5e3-474c-96a6-22a39d5efdc2" valueTypeId="e7f44fea-f1b5-458d-8b24-5f82330c35ee"/>
+    <refType typeId="f391955f-333b-4280-bb35-f8210d525916" valueTypeId="8ee7b3c4-1e83-4a99-af0a-ee56d81e810c"/>
+    <selectionType typeId="841cfd13-87ad-483d-ae94-7e9f9960bb58" valueTypeId="886afbbf-d332-4655-8ae5-5bf8547a0ce8"/>
+    <listType typeId="34f66942-e48b-4304-8931-d60083f7c49d" valueTypeId="bc4daf5e-c250-407b-b9c8-0fec8db62f1c"/>
+    <managerType typeId="3a7cfe2d-c955-4ac1-a6bf-296a053a9fd0" valueTypeId="04d4acaf-8fef-42ac-8d34-5928aea65c38"/>
+  </producedTypes>
+  <name>SystemCategory</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категория операционной системы</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.SystemCategory.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.SystemCategory.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>80</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

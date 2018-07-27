@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="15f8fb6d-b5fe-457d-bef2-a6a05fe6cc56">
+  <producedTypes>
+    <refType typeId="ffced33d-55db-4bc4-8d90-6a989576a13e" valueTypeId="be9ba0e6-601f-4632-bb08-b7879aee03f2"/>
+    <listType typeId="cfc2f0e9-7e25-4ebf-92fb-5b7cbc55cabd" valueTypeId="32037479-804f-4032-83eb-9568acc995c0"/>
+    <managerType typeId="f53759e6-7040-4223-b14a-07046a43b6f9" valueTypeId="01ef3a6b-bbd7-47b4-8d21-404a9b03097f"/>
+  </producedTypes>
+  <name>ВариантыSMTPАутентификации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты SMTP аутентификации</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ee615f44-b60b-4e71-ac57-69fa417e75ad">
+    <name>АналогичноPOP3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналогично POP3</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="2f47fdf3-66ae-496d-9142-0588c000c420">
+    <name>ЗадаетсяПараметрами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задается параметрами</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="174056b8-b9ca-421d-b7c1-1e7779a1e653">
+    <name>POP3ПередSMTP</name>
+    <synonym>
+      <key>ru</key>
+      <value>POP3 перед SMTP</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="75c0267e-6a4b-4de4-87f2-ef4d21318388">
+    <name>НеЗадано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не задано</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

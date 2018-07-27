@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ccd351a-72be-4505-83b7-03ebf3bee796">
+  <producedTypes>
+    <objectType typeId="9075fc49-245e-48ca-980b-dac7594ece2d" valueTypeId="fe2dcea1-8002-4eea-bc2c-89d7c03bf970"/>
+    <refType typeId="87f29b02-e958-4049-a679-828d25ef575a" valueTypeId="d0c2df26-8b8a-48a6-abfb-a8b9062d1ecc"/>
+    <selectionType typeId="981fbc12-b18b-4187-b726-51b2c0320ce2" valueTypeId="d235101c-fe71-4b0b-8347-ec591dcfba7a"/>
+    <listType typeId="e653e31f-48a0-4acc-9b92-871555854a8d" valueTypeId="0217a681-b512-45d4-b202-740435a93fc0"/>
+    <managerType typeId="55092b87-2428-43d8-a38f-16521e9a7804" valueTypeId="2c8cef6e-1bf5-474a-acd3-a247e660daf9"/>
+  </producedTypes>
+  <name>ТипыКонфигурации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы конфигурации</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТипыКонфигурации.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТипыКонфигурации.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="d1340df7-6559-495f-a606-c80f0a70c2fd">
+      <name>v77</name>
+      <description>1С:Предприятие 7.7</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="a4a80d22-4607-41a9-a39e-23650f1265fc">
+      <name>v8</name>
+      <description>1С:Предприятие 8</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

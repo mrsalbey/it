@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6160b86b-0742-4d8b-a47f-079a6f06a4c3">
+  <producedTypes>
+    <objectType typeId="787376fa-6d9e-4518-9224-fbcb834db498" valueTypeId="da8ad58c-22e3-44fd-867c-32e4b5aaec15"/>
+    <managerType typeId="9bb7e587-5a0a-43d7-9e4a-ea5f0358e201" valueTypeId="76f01e9b-34b0-4afe-8447-3f6c2d277e98"/>
+  </producedTypes>
+  <name>ЗапускОтчетаПоРаспределению</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запуск отчета по распределению</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗапускОтчетаПоРаспределению.Form.Форма</defaultForm>
+  <forms uuid="f3aed44e-2911-4d57-b783-ae7e97df0a4a">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

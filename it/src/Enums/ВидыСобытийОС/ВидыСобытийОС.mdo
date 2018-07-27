@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="429c2634-ec9d-4ade-b4d5-48c8e3961871">
+  <producedTypes>
+    <refType typeId="6e3534cc-2ab9-4ab2-aee7-f1fae37c8f4d" valueTypeId="78796b40-62b2-4df9-a044-2a7a37855ad2"/>
+    <listType typeId="1e503611-f7bc-4ad1-8873-d691a6c505ae" valueTypeId="db68f159-0c36-4405-b6af-349d8a33def9"/>
+    <managerType typeId="8a18085f-46c6-4545-b35a-cf6771bbafd7" valueTypeId="fef26eea-5e3a-4942-9929-de80ad087eb8"/>
+  </producedTypes>
+  <name>ВидыСобытийОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды событий с основными средствами</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ae695d8c-df2d-48de-a799-81e09413f636">
+    <name>ПринятиеКУчету</name>
+    <synonym>
+      <key>ru</key>
+      <value>Принятие к учету</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="bcd4b756-0358-4dcd-9afa-c358ddc98286">
+    <name>ВводВЭксплуатацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ввод в эксплуатацию</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="83481e70-a1f1-44a9-a864-f83eafd7f89e">
+    <name>ПринятиеКУчетуСВводомВЭксплуатацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Принятие к учету с вводом в эксплуатацию</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f64b0602-c1f9-435f-a52b-0a9a406d4cfb">
+    <name>ВнутреннееПеремещение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внутреннее перемещение</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="01f457fc-e785-4705-8b63-1ed887eb2cd4">
+    <name>Дооборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дооборудование</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="6760b5cb-e982-4aa1-81da-da751eb11a9e">
+    <name>Списание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списание</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

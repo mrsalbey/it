@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1e2a61ca-5578-417d-986f-d97e4687d049">
+  <name>РаспределениеЛицензий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Распределение лицензий</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.КомплектацияОбъектовОС</content>
+  <content>Report.ИспользованиеЛицензийВОС</content>
+  <content>Document.РаспределениеЛицензий</content>
+  <content>Report.АнализЛицензионногоСофта</content>
+  <content>Report.АнализЛицензийСводно</content>
+  <parentSubsystem>Subsystem.Лицензии</parentSubsystem>
+</mdclass:Subsystem>

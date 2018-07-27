@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e52422d-35c3-4696-9701-46c7ca69d7aa">
+  <name>НастройкаИАдминистрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка и администрирование</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Администрирование, настройка, сервисные функции</value>
+  </explanation>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.НастройкаИАдминистрирование48</picture>
+  </picture>
+  <content>CommonForm.НастройкиЭЦП</content>
+  <content>Catalog.ДополнительныеОтчетыИОбработки</content>
+  <content>Catalog.УчетныеЗаписиЭлектроннойПочты</content>
+  <content>DataProcessor.ЗагрузкаКурсовВалют</content>
+  <content>DataProcessor.КонсольЗапросов_82</content>
+  <content>DataProcessor.ПанельАдминистрированияБСП</content>
+  <content>Report.АнализЖурналаРегистрации</content>
+  <content>DataProcessor.РегламентныеИФоновыеЗадания</content>
+  <content>DataProcessor.УдалениеПомеченныхОбъектов</content>
+  <content>InformationRegister.ИсполнителиЗадач</content>
+  <content>Report.КонсольСистемыКомпоновкиДанных</content>
+  <content>DataProcessor.УниверсальныеПодборИОбработкаОбъектов</content>
+</mdclass:Subsystem>

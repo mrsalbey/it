@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="10b4cd93-5d80-402a-89e3-46a2749018ba">
+  <producedTypes>
+    <objectType typeId="1b5bcca0-7787-4881-bcea-079311a87c87" valueTypeId="b8c8fcf7-e228-4dd1-9992-4db4bbc73dff"/>
+    <refType typeId="71f9b307-6403-4b40-b9be-f3094a084857" valueTypeId="918ee280-e8ae-4482-8203-a05007e72535"/>
+    <selectionType typeId="dea7ca59-e318-4d96-8fcb-1130f5d84e9e" valueTypeId="f3492478-aaee-4e2c-b127-d1cc7c662dbf"/>
+    <listType typeId="95c705c5-d9fd-4a20-ac98-01d0d3d041c4" valueTypeId="b7b150b4-e51b-47db-ba6d-ac454cab3580"/>
+    <managerType typeId="2efc7a0f-093e-4340-9b80-97fb7798acd3" valueTypeId="22a0d959-f16f-4102-8437-064050932689"/>
+  </producedTypes>
+  <name>ИдентификаторыПрограмм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Идентификаторы программ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ИдентификаторыПрограмм.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ИдентификаторыПрограмм.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="543ff0ac-7c3f-4c64-8b14-042c5a7c3b9b">
+    <name>Производитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Производитель</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cfcfc2b7-e40a-490b-a4c6-6b8f955a683c">
+    <name>ПризнакУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Признак учета</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ПризнакУчетаПрограмм</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="675edd97-0c79-4f1a-b2f9-0c1ade698586">
+    <name>Категория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КатегорииПО</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cebab04e-8644-4380-a432-350fdf052ab5">
+    <name>ВариантРазмещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант размещения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВариантыРазмещенияЛицензий</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

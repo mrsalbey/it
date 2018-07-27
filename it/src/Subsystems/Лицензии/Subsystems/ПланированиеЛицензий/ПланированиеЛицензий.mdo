@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0b395a9-78bb-4184-a34f-1044f5c6c38d">
+  <name>ПланированиеЛицензий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планирование лицензий</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ПланЗакупокЛицензий</content>
+  <content>Report.АнализЖивогоСофта</content>
+  <content>InformationRegister.ЦеныПрограмм</content>
+  <parentSubsystem>Subsystem.Лицензии</parentSubsystem>
+</mdclass:Subsystem>

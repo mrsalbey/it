@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ec7f435-a957-4fe6-b177-c1a484df9ecd">
+  <name>Задачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задачи</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <explanation>
+    <key>ru</key>
+    <value>Работа с задачами</value>
+  </explanation>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.БизнесПроцессыИЗадачи</picture>
+  </picture>
+  <content>Role.ЧтениеЗаданий</content>
+  <content>Role.ЧтениеЗадач</content>
+  <content>Role.ИзменениеВыполнениеЗадач</content>
+  <content>Task.ЗадачаИсполнителя</content>
+  <content>BusinessProcess.Задание</content>
+  <content>BusinessProcess.ЗаданиеСРолевойАдресацией</content>
+</mdclass:Subsystem>

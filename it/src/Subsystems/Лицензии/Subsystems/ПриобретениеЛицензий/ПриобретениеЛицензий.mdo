@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="21104703-593a-44fb-81b2-976edfa62f37">
+  <name>ПриобретениеЛицензий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приобретение лицензий</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ПокупкаПоддержкиЛицензий</content>
+  <content>Document.СписаниеОС</content>
+  <content>Document.ПоступлениеОС</content>
+  <parentSubsystem>Subsystem.Лицензии</parentSubsystem>
+</mdclass:Subsystem>

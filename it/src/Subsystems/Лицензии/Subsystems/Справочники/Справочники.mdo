@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="775f01b5-8bd1-4c9d-9f74-4567436d76fa">
+  <name>Справочники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справочники</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ВидыЛицензий</content>
+  <content>Catalog.ИдентификаторыПрограмм</content>
+  <content>Catalog.ОсновныеСредства</content>
+  <content>Catalog.ШаблоныСоответствийОС</content>
+  <content>InformationRegister.АналогиЛицензий</content>
+  <content>InformationRegister.МестонахождениеЛицензий</content>
+  <content>FunctionalOption.УчетКомпьютеров</content>
+  <parentSubsystem>Subsystem.Лицензии</parentSubsystem>
+</mdclass:Subsystem>

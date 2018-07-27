@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f5a06e8-3022-4fa3-a98a-5d1846a6bdea">
+  <producedTypes>
+    <objectType typeId="7ba00f51-87e9-4895-bedd-5dc86f1a57a9" valueTypeId="48cdee95-1e53-4fbf-aa7b-5dc9c649c732"/>
+    <refType typeId="b923f07a-335a-435c-b1b7-f6f8f13b50cd" valueTypeId="4edec08e-c6ba-4b8e-af0b-a51c2c08edbe"/>
+    <selectionType typeId="bc5f30b2-8ff4-4fb9-82d8-57cc064bb1eb" valueTypeId="43177580-1cb6-46e1-bb6c-43dfcd13f2d2"/>
+    <listType typeId="c16a3a95-6e33-40e7-9b41-396a446ac183" valueTypeId="cfdbfd71-4aca-4763-abee-5698b8635592"/>
+    <managerType typeId="193deec8-c112-4317-bf9c-73b103527166" valueTypeId="b6fd3b72-e8a6-4e5b-9102-980e802915f5"/>
+  </producedTypes>
+  <name>SystemID</name>
+  <synonym>
+    <key>ru</key>
+    <value>Идентификаторы операционных систем</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.SystemID.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.SystemID.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="c3d93eee-593f-449f-8a8b-8e3e29685036">
+    <name>SystemCategory</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория</value>
+    </synonym>
+    <comment>Категория операционной системы</comment>
+    <type>
+      <types>CatalogRef.SystemCategory</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

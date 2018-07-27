@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23c8b7b9-d606-4531-a6bb-5a17912a1b4e">
+  <producedTypes>
+    <objectType typeId="0d410564-fc5d-4773-a9c6-64a08268adc5" valueTypeId="7d93ea85-8cfa-4f51-9f6e-7aa899e22843"/>
+    <refType typeId="3fd3725b-216f-4d0d-9def-27dd0f2608d6" valueTypeId="3e4a4be2-1ed9-4f11-8d82-2aeaebd7316c"/>
+    <selectionType typeId="9921dd02-513e-4783-b8a5-03f0c68746a6" valueTypeId="7c7b389a-eb88-4de6-adcf-2eedb5cb60a7"/>
+    <listType typeId="81dbfade-4037-46ce-ab41-c948b9aedfbc" valueTypeId="61e55689-6840-45d7-a65c-e0fd359a87e4"/>
+    <managerType typeId="dbfc9650-e148-4536-8985-800527e72693" valueTypeId="5a468cd9-8616-4246-99aa-25617ee48803"/>
+  </producedTypes>
+  <name>КатегорияОсновногоСредства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категория основного средства</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КатегорияОсновногоСредства.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КатегорияОсновногоСредства.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="edc06a8d-dfce-4d61-8c66-68480206fb75">
+      <name>КомпьютернаяТехника</name>
+      <description>Компьютерная техника</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="64fa4e4a-0c16-4263-88ee-221f8a845b54">
+        <name>ЖесткийДиск</name>
+        <description>Жесткий диск</description>
+        <code xsi:type="core:StringValue">
+          <value>000000006</value>
+        </code>
+      </content>
+      <content id="de476fa5-f1c2-4f00-abae-7abcfb3f649f">
+        <name>Компьютер</name>
+        <description>Компьютер</description>
+        <code xsi:type="core:StringValue">
+          <value>000000004</value>
+        </code>
+      </content>
+      <content id="5675daf9-8a91-4cf7-bfd5-a473bac63074">
+        <name>Ноутбук</name>
+        <description>Ноутбук</description>
+        <code xsi:type="core:StringValue">
+          <value>000000005</value>
+        </code>
+      </content>
+    </items>
+    <items id="3b66be77-9acf-4471-a183-4f35dbcc5b02">
+      <name>Мебель</name>
+      <description>Мебель</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+      <isFolder>true</isFolder>
+    </items>
+    <items id="b20f74ff-f6ca-4b26-b4af-bac8a02c5863">
+      <name>Транспорт</name>
+      <description>Транспорт</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+      <isFolder>true</isFolder>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

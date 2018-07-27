@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d96da01b-4d43-4f89-8d3f-229ddf45c95b">
+  <name>Компьютеры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Компьютеры</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ОсновныеСредства</content>
+  <content>InformationRegister.МакАдресаКомпьютеров</content>
+  <content>InformationRegister.МестонахождениеОС</content>
+  <content>InformationRegister.ИсключаемыеПриЗагрузке</content>
+  <content>Catalog.SystemCategory</content>
+  <content>Catalog.SystemID</content>
+  <content>Catalog.CPUNameCategory</content>
+  <content>Catalog.CPUNameID</content>
+  <parentSubsystem>Subsystem.Компьютеры</parentSubsystem>
+</mdclass:Subsystem>

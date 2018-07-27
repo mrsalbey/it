@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3bf29726-54df-45af-9840-df173c094e3b">
+  <name>РаспределениеКомпьютеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Распределение компьютеров</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.КомплектацияОС</content>
+  <content>Document.ПеремещениеОС</content>
+  <content>Document.ПоступлениеОС</content>
+  <content>Document.СписаниеОС</content>
+  <parentSubsystem>Subsystem.Компьютеры</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d6b67aa3-bf71-47f7-b1f7-cc1a539e461a">
+  <producedTypes>
+    <objectType typeId="e88e32a2-b23c-40d4-a3f7-e7460837f5be" valueTypeId="09084aec-2300-461e-bad9-be65562beb2c"/>
+    <refType typeId="8b7cef64-bd99-4c38-8e21-3d8bf02f817d" valueTypeId="55c34dee-23cb-4c2a-95a9-25230f3bb4ae"/>
+    <selectionType typeId="0f27dcc4-f7c0-49ea-a9ce-6bebbe0a5a80" valueTypeId="b51f84e9-6854-4d0c-9e84-b342af232e20"/>
+    <listType typeId="0b4e356e-1f1d-462b-a17f-80d2de6cc75c" valueTypeId="0e05cdb2-bbaa-4521-8fb7-b183259121a3"/>
+    <managerType typeId="44c5aeda-81d1-4edd-b3ba-205dbe489de6" valueTypeId="f285ef8f-c294-4543-8943-abd101078e51"/>
+  </producedTypes>
+  <name>ДолжностиОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Должности организаций</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ДолжностиОрганизаций.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ДолжностиОрганизаций.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="ff0f0eae-10c8-4aad-884a-cb834e2dad12">
+    <name>НаименованиеСинхронизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование синхронизации</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="256eb733-6485-4dd7-bd9f-504fc349d5e2">
+    <name>НаименованиеПолное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование полное</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

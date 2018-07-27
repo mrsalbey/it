@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a5820ff7-98a4-4b91-b505-ed82cbd9c464">
+  <producedTypes>
+    <objectType typeId="86a4fd68-6ac7-4318-99f9-d8bcbb7d3079" valueTypeId="33bf3260-d98b-4283-af79-cc2c3345deb0"/>
+    <managerType typeId="181ff5bb-098a-4d18-aee2-cabd45eb727c" valueTypeId="a36ab429-1691-40e6-92a8-dc313cb3ef04"/>
+  </producedTypes>
+  <name>АнализЛицензийРуководителю</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ лицензий руководителю (в учетных ценах)</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.АнализЛицензийРуководителю.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="02ee5b3c-d468-499e-9a78-c1dc4a15e8c4">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

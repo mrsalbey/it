@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a15845cc-8cb9-47b6-a005-2e4516da11ae">
+  <name>ПриПроведенииРаспределениеЛицензий</name>
+  <synonym>
+    <key>ru</key>
+    <value>При проведении распределение лицензий</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>DocumentObject.РаспределениеЛицензий</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.УправлениеУчетнымиЗаписямиСервер.ПриПроведенииРаспределениеЛицензийОбработкаПроведения</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1618d58a-d81b-4f4f-adcd-faeb2655450b">
+  <producedTypes>
+    <objectType typeId="02395cc8-2d3c-4a92-bc25-443bb8ee7048" valueTypeId="11cc0e84-4bae-47c5-aec7-1353805c7852"/>
+    <managerType typeId="e2d12cdc-2108-42d3-84cd-90f7c71f7a0b" valueTypeId="d793f7d1-c24a-4870-8f75-4c14c3ea8c1d"/>
+  </producedTypes>
+  <name>АнализРазмещенияОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ размещения объектов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.АнализРазмещенияОбъектов.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.АнализРазмещенияОбъектов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="a9f26671-8db6-4269-92c8-3a459a9d3d07">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="871a43cd-e4e1-4086-b304-76b472a25b98">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

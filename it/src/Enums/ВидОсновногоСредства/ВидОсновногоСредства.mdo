@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a7a1df1-92a0-40c3-80ec-f4ce55be1c95">
+  <producedTypes>
+    <refType typeId="f87319c1-5a8b-46d0-914c-9c0e159e8676" valueTypeId="aa659f44-3f88-4cd9-ba5a-ff5bd4bbc50b"/>
+    <listType typeId="9a254a3d-a514-4f22-b401-666fce6296da" valueTypeId="d75536d0-157c-45c7-b72a-1237effeeaf9"/>
+    <managerType typeId="d5a76f3e-57a9-4e74-80ee-17b32b492133" valueTypeId="a1059adf-62cf-4ce1-afe8-1f9d81537cc1"/>
+  </producedTypes>
+  <name>ВидОсновногоСредства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид основного средства</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="1c3768e9-bb88-4405-b6d8-e08659b66846">
+    <name>ПерсональныйКомпьютер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Персональный компьютер</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="165b6ebf-55b5-4791-95a4-e0e99ab91c02">
+    <name>ПрограммноеОбеспечение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Программное обеспечение</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="9dde47c4-47b2-4315-9a7d-a8014b0746cb">
+    <name>Лицензия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лицензия</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="a46ceb81-41b2-4f50-8b3e-e9181b9e7eff">
+    <name>Железо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Железо</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

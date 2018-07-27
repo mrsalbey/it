@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4bca46f-281f-46a1-ada3-016bd8696d3a">
+  <producedTypes>
+    <selectionType typeId="b2e3687f-2f9f-40ad-8db6-deb5d56d4481" valueTypeId="1aa1ea2c-dfa9-4a70-9a1f-a01274288855"/>
+    <listType typeId="da8e7e26-3fb8-461a-881f-be609bc15788" valueTypeId="7eb5ed55-ed11-4ad9-a8ba-0e5ce26276bc"/>
+    <managerType typeId="ca1c778b-30c0-4023-8075-448d5bac55ee" valueTypeId="96db184e-ae34-41d4-9c50-4bd4701b34be"/>
+    <recordSetType typeId="ebb4c21b-bea7-4a63-ad39-6e1bf229d5c4" valueTypeId="81a57d48-626f-4e04-80dc-8adb60ed8abf"/>
+    <recordKeyType typeId="3ca7281c-641a-41aa-8d72-9d20ad7cd234" valueTypeId="8cb17107-f2d3-4515-8a2d-ae2c72aba7a5"/>
+    <recordType typeId="a97ff352-2a68-4ed1-b136-5d9e69d08a10" valueTypeId="011c661f-36fd-416b-80ff-16368279e810"/>
+    <recordManagerType typeId="521f2f02-bb43-4d3b-9aeb-9bf85aa611c0" valueTypeId="6d9db43b-97e5-45d4-a1fb-4e4eec6ff400"/>
+  </producedTypes>
+  <name>ОбязательныйСофтОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обязательный софт организаций</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="aa1a2483-3459-4bed-a776-d5d22db6a0c3">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f4b4360b-6463-495d-9863-4240059c3d47">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6e5de4bd-1288-481c-9b40-e163b18fdc0b">
+    <name>ИдентификаторПрограммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор программы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ИдентификаторыПрограмм</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

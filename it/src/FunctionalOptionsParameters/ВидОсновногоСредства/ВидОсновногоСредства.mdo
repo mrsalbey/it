@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOptionsParameter xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ce1a5e6-da3c-412f-abc0-9ed615fa646a">
+  <name>ВидОсновногоСредства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид основного средства</value>
+  </synonym>
+  <comment></comment>
+  <use>InformationRegister.УчетОсновныхСредств.Dimension.ВидОсновногоСредства</use>
+</mdclass:FunctionalOptionsParameter>

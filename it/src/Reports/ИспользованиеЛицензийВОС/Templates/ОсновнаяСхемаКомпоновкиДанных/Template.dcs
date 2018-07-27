@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Объект</dataPath>
+			<field>Объект</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОсновноеСредство</dataPath>
+			<field>ОсновноеСредство</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МОЛ</dataPath>
+			<field>МОЛ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодразделениеОрганизации</dataPath>
+			<field>ПодразделениеОрганизации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Помещение</dataPath>
+			<field>Помещение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВерсийПрограммы</dataPath>
+			<field>КоличествоВерсийПрограммы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеобходимоеКоличествоПрограмм</dataPath>
+			<field>НеобходимоеКоличествоПрограмм</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбщаяСтоимостьПрограммы</dataPath>
+			<field>ОбщаяСтоимостьПрограммы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Цена</dataPath>
+			<field>Цена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаПоддержки</dataPath>
+			<field>ЦенаПоддержки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаСПоддержкой</dataPath>
+			<field>ЦенаСПоддержкой</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификаторКомпьютера</dataPath>
+			<field>ИдентификаторКомпьютера</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификаторПрограммы</dataPath>
+			<field>ИдентификаторПрограммы</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектКомпьютера</dataPath>
+			<field>ОбъектКомпьютера</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ИспользуемыеОбъекты.ОсновноеСредство КАК ОсновноеСредство,
+	ИспользуемыеОбъекты.Объект КАК Объект,
+	ИспользуемыеОбъекты.ИдентификаторПрограммы КАК ИдентификаторПрограммы,
+	МестонахождениеОССрезПоследних.Организация КАК Организация,
+	МестонахождениеОССрезПоследних.ПодразделениеОрганизации КАК ПодразделениеОрганизации,
+	МестонахождениеОССрезПоследних.МОЛ КАК МОЛ,
+	МестонахождениеОССрезПоследних.Помещение КАК Помещение,
+	ИспользуемыеОбъекты.КоличествоВерсийПрограммы КАК КоличествоВерсийПрограммы,
+	ИспользуемыеОбъекты.НеобходимоеКоличествоПрограмм КАК НеобходимоеКоличествоПрограмм,
+	ЦеныПрограммСрезПоследних.Цена КАК Цена,
+	ЦеныПрограммСрезПоследних.ЦенаСПоддержкой КАК ЦенаСПоддержкой,
+	ЦеныПрограммСрезПоследних.ЦенаПоддержки КАК ЦенаПоддержки,
+	ЦеныПрограммСрезПоследних.Цена * ИспользуемыеОбъекты.НеобходимоеКоличествоПрограмм КАК ОбщаяСтоимостьПрограммы
+{ВЫБРАТЬ
+	ОсновноеСредство.*,
+	Объект.*,
+	ИдентификаторПрограммы.*,
+	Организация.*,
+	ПодразделениеОрганизации.*,
+	МОЛ.*,
+	Помещение.*,
+	КоличествоВерсийПрограммы,
+	НеобходимоеКоличествоПрограмм,
+	Цена,
+	ЦенаСПоддержкой,
+	ЦенаПоддержки,
+	ОбщаяСтоимостьПрограммы}
+ИЗ
+	(ВЫБРАТЬ
+		РазмещениеОбъектовОстатки.ИдентификаторКомпьютера КАК ОсновноеСредство,
+		РазмещениеОбъектовОстатки.ОбъектКомпьютера КАК Объект,
+		РазмещениеОбъектовОстатки.ИдентификаторПрограммы КАК ИдентификаторПрограммы,
+		СУММА(РазмещениеОбъектовОстатки.КоличествоОстаток) КАК КоличествоВерсийПрограммы,
+		0 КАК НеобходимоеКоличествоПрограмм
+	ИЗ
+		РегистрНакопления.РазмещениеОбъектов.Остатки({(&amp;КонецПериода)}, ) КАК РазмещениеОбъектовОстатки
+	
+	СГРУППИРОВАТЬ ПО
+		РазмещениеОбъектовОстатки.ОбъектКомпьютера,
+		РазмещениеОбъектовОстатки.ИдентификаторКомпьютера,
+		РазмещениеОбъектовОстатки.ИдентификаторПрограммы
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		КоличествоПрограмм.ОсновноеСредство,
+		НЕОПРЕДЕЛЕНО,
+		КоличествоПрограмм.ИдентификаторПрограммы,
+		0,
+		1
+	ИЗ
+		(ВЫБРАТЬ
+			ОбъектыВСоставеОСОстатки.ИдентификаторКомпьютера КАК ОсновноеСредство,
+			ОбъектыВСоставеОСОстатки.ИдентификаторПрограммы КАК ИдентификаторПрограммы
+		ИЗ
+			РегистрНакопления.РазмещениеОбъектов.Остатки({(&amp;КонецПериода)}, ) КАК ОбъектыВСоставеОСОстатки
+		
+		СГРУППИРОВАТЬ ПО
+			ОбъектыВСоставеОСОстатки.ИдентификаторКомпьютера,
+			ОбъектыВСоставеОСОстатки.ИдентификаторПрограммы) КАК КоличествоПрограмм) КАК ИспользуемыеОбъекты
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.МестонахождениеОС.СрезПоследних({(&amp;КонецПериода)}, ) КАК МестонахождениеОССрезПоследних
+		ПО ИспользуемыеОбъекты.ОсновноеСредство = МестонахождениеОССрезПоследних.ОсновноеСредство
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныПрограмм.СрезПоследних({(&amp;КонецПериода)}, ) КАК ЦеныПрограммСрезПоследних
+		ПО ИспользуемыеОбъекты.ИдентификаторПрограммы = ЦеныПрограммСрезПоследних.Программа
+{ГДЕ
+	ИспользуемыеОбъекты.ОсновноеСредство.*,
+	ИспользуемыеОбъекты.Объект.*,
+	ИспользуемыеОбъекты.ИдентификаторПрограммы.*,
+	МестонахождениеОССрезПоследних.Организация.*,
+	МестонахождениеОССрезПоследних.ПодразделениеОрганизации.*,
+	МестонахождениеОССрезПоследних.МОЛ.*,
+	МестонахождениеОССрезПоследних.Помещение.*,
+	ИспользуемыеОбъекты.КоличествоВерсийПрограммы,
+	ИспользуемыеОбъекты.НеобходимоеКоличествоПрограмм}</query>
+	</dataSet>
+	<totalField>
+		<dataPath>КоличествоВерсийПрограммы</dataPath>
+		<expression>Сумма(КоличествоВерсийПрограммы)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НеобходимоеКоличествоПрограмм</dataPath>
+		<expression>Сумма(НеобходимоеКоличествоПрограмм)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОбщаяСтоимостьПрограммы</dataPath>
+		<expression>Сумма(НеобходимоеКоличествоПрограмм)*Максимум(Цена)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Цена</dataPath>
+		<expression>Максимум(Цена)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЦенаПоддержки</dataPath>
+		<expression>Максимум(ЦенаПоддержки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЦенаСПоддержкой</dataPath>
+		<expression>Максимум(ЦенаСПоддержкой)</expression>
+	</totalField>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НеобходимоеКоличествоПрограмм</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Цена</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбщаяСтоимостьПрограммы</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ИдентификаторПрограммы</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>КоличествоВерсийПрограммы</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Объект</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Организация</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ПодразделениеОрганизации</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:item>
+								<dcsset:groupItems>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>ОсновноеСредство</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>МОЛ</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+								</dcsset:groupItems>
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								</dcsset:selection>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:row>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

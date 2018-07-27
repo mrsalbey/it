@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f3b1af1a-99fe-4a6b-8be8-2379c272b42d">
+  <producedTypes>
+    <objectType typeId="5c109f96-46d8-4ec1-9eed-1db47f837400" valueTypeId="0f979926-fd48-4204-ab59-af489b66bffb"/>
+    <refType typeId="9e3d6493-c856-447b-a264-3d1de0909eeb" valueTypeId="5cd83b20-a389-48dc-9e0a-49da66a116d9"/>
+    <selectionType typeId="e337afcf-10a5-4e3f-88c6-93357631c7b4" valueTypeId="21435438-0711-42bd-a697-e3c7d607ad7f"/>
+    <listType typeId="73dc209d-eff1-4d92-adb3-c1256887f7cd" valueTypeId="3f365f7d-54f8-4b4b-9931-41e3a338c8ad"/>
+    <managerType typeId="34098c3e-939e-45e5-ae35-d926c6fc4253" valueTypeId="3c40db26-89dd-429f-98dc-f4e4a874e27f"/>
+  </producedTypes>
+  <name>CPUNameID</name>
+  <synonym>
+    <key>ru</key>
+    <value>Идентификаторы процессоров</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.CPUNameID.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.CPUNameID.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="7832b7da-6042-4a37-9b0f-c8718456178b">
+    <name>CPUNameCategory</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория процессора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.CPUNameCategory</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
